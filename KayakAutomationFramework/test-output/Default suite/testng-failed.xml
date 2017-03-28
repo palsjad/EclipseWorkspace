@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.auto.test.KayakHomePageTest">
+      <class name="com.auto.test.FlightsPageTest">
         <methods>
           <include name="before"/>
-          <include name="after"/>
-          <include name="clickHotelsTest"/>
+          <include name="clickFlightsTest"/>
         </methods>
-      </class> <!-- com.auto.test.KayakHomePageTest -->
+      </class> <!-- com.auto.test.FlightsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

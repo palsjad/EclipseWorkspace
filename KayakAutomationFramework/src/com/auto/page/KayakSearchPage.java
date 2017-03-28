@@ -1,5 +1,5 @@
 package com.auto.page;
 
-public class SearchPage {
+public class KayakSearchPage {
 
 }

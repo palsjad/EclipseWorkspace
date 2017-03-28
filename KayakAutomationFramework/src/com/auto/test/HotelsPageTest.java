@@ -1,5 +1,5 @@
-package com.auto.page;
+package com.auto.test;
 
-public class HotelsPage {
+public class HotelsPageTest {
 
 }

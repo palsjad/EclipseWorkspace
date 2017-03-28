@@ -1,5 +1,5 @@
 package com.auto.page;
 
-public class LoginPage {
+public class KayakLoginPage {
 
 }
