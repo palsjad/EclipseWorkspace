@@ -1,8 +1,8 @@
 package com.auto.test;
 
 import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+ import org.openqa.selenium.chrome.ChromeDriver;
+//  import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -21,22 +21,29 @@ public class FlightsPageTest {
 	@BeforeClass
 	public void before() {
 		
-//		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\resources\\chromedriver.exe");
-//		driver = new ChromeDriver();
-		
-		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\resources\\geckodriver.exe");
-		driver = new FirefoxDriver();
-				
+  	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\resources\\chromedriver.exe");
+ 		driver = new ChromeDriver(); 
+ 		
+ 		
+	/*	
+ 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\resources\\geckodriver.exe");
+		driver = new FirefoxDriver(); 
+				*/
 	    fp = new FlightsPage(driver);
-		  kp = new KayakHomePage(driver);
+	 	  kp = new KayakHomePage(driver);
 
-		String brow = kp.getKayakHomePage();
-	    System.out.println("flights page + " + brow);
+	//	String brow = kp.getKayakHomePage();
+	 	  
+			driver.get("https://www.kayak.com/flights");
+  
+	 	  
+	 	  
+//	    System.out.println("flights page + " + brow);
 	
 	}
 	
 	@Test
-	public void clickFlightsTest() {
+	public void clickFlightsTest() throws InterruptedException {
 		
 		fp.clickFlights();
 		
@@ -46,7 +53,7 @@ public class FlightsPageTest {
 	 @AfterClass
 	    public void after() {
 	    	
-	    	driver.close();
+//	    	driver.close();
 	    	
 	    	
 	    }

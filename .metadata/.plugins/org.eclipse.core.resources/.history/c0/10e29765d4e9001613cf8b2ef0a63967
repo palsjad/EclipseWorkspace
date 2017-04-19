@@ -1,0 +1,31 @@
+
+
+//  Write a program to reverse each individual word in a sentence.
+
+
+package com.wbl.assignments.Strings;
+
+public class ReverseWordInSentence {
+
+	public static void main(String[] args) {
+ 
+		String sentence = "I am a girl";
+		
+		System.out.println("\n\nThe original sentence is : " + sentence);
+
+		String[] words = sentence.split(" ");
+		
+		for(String s : words) {
+			System.out.println(s);
+			char[] ch = s.toCharArray();
+			for(int i = s.length()-1; i >= 0 ; i++){
+				System.out.println(ch[i]);
+				
+				
+				
+			}
+		}
+		
+	}
+
+}

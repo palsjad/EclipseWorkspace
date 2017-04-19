@@ -1,0 +1,59 @@
+package com.TestingAutomation;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class WalmartTest {
+	
+	WebDriver driver;
+
+	@BeforeTest
+	public void before() {
+      System.setProperty("webdriver.chrome.driver", "C:\\QA\\EclipseWorkspace\\TestingAutomation\\resources\\chromedriver.exe");
+	  driver = new ChromeDriver();
+	} 
+	
+	@Test
+	public void  waitsTest() throws InterruptedException {
+		
+     driver.get("https://www.walmart.com");	
+     
+     
+//     WebElement element = driver.findElement(By.xpath("//button[.='All Departments'][@data-uid='LHN']"));
+     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+  
+     WebElement element = driver.findElement(By.xpath("//button[.='All Departments'][@data-uid='LHN']"));
+     
+     Actions action = new Actions(driver);
+     
+ 
+ //   action.moveToElement(element).build().perform();
+     
+     action.moveToElement(element).perform();
+
+
+     element = driver.findElement(By.cssSelector("[id='superDeptId-3']"));
+     
+    action = new Actions(driver);
+
+     action.moveToElement(element).build().perform();
+     
+     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+     driver.findElement(By.linkText("Shop All Clothing")).click();
+  
+     driver.close();
+	
+     action.click();
+	
+	}
+	
+
+}

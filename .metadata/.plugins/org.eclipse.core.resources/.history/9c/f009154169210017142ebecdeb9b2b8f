@@ -1,0 +1,30 @@
+package com.wbl.page;
+
+import org.openqa.selenium.WebDriver;
+
+public class AmazonCommonMethods {
+	
+	
+	WebDriver driver;
+	
+	
+	public AmazonCommonMethods(WebDriver driver){
+		
+		this.driver = driver;
+	}
+	
+
+	public void commonMethodsForSearch() {
+		
+		
+		
+		
+	}
+	
+	public void commonMethodsForCart() {
+		
+		
+		
+		
+	}
+}

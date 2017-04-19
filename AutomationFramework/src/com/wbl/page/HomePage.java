@@ -3,7 +3,8 @@ package com.wbl.page;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
- import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
  import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -52,6 +53,13 @@ public HomePage(WebDriver driver) {
     public int headerNavLinks(){
 		 System.out.println("hp nav links");
 
+			By byLocator = ByClass.getByObject("css-navLocator");
+			
+			System.out.println("the by locator is :" + byLocator);
+			
+			System.out.println("the driver is :" + driver);
+			
+			
     	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     	
 //		List<WebElement> elements = driver.findElements(By.cssSelector(navLocator)) ;

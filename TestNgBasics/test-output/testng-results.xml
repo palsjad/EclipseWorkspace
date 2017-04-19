@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="846" started-at="2017-04-15T00:34:11Z" finished-at="2017-04-15T00:34:11Z">
+    <groups>
+      <group name="functionalitytest">
+        <method signature="HomePageTest.presentationTest()[pri:0, instance:com.wbl.test.HomePageTest@cb5822]" name="presentationTest" class="com.wbl.test.HomePageTest"/>
+      </group> <!-- functionalitytest -->
+      <group name="smoketest">
+        <method signature="HomePageTest.loginTest()[pri:0, instance:com.wbl.test.HomePageTest@cb5822]" name="loginTest" class="com.wbl.test.HomePageTest"/>
+        <method signature="HomePageTest.recordingTest()[pri:0, instance:com.wbl.test.HomePageTest@cb5822]" name="recordingTest" class="com.wbl.test.HomePageTest"/>
+      </group> <!-- smoketest -->
+    </groups>
+    <test name="Test" duration-ms="39" started-at="2017-04-15T00:34:11Z" finished-at="2017-04-15T00:34:11Z">
+      <class name="com.wbl.test.CalculatorTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.wbl.test.CalculatorTest@3a82f6ef]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.wbl.test.CalculatorTest@3a82f6ef]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.wbl.test.CalculatorTest@3a82f6ef]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testDoCalc(double, double, char, double)[pri:0, instance:com.wbl.test.CalculatorTest@3a82f6ef]" name="testDoCalc" duration-ms="12" started-at="2017-04-14T17:34:11Z" data-provider="testData" finished-at="2017-04-14T17:34:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[+]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoCalc -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.wbl.test.CalculatorTest@3a82f6ef]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.wbl.test.CalculatorTest@3a82f6ef]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testDoCalc(double, double, char, double)[pri:0, instance:com.wbl.test.CalculatorTest@3a82f6ef]" name="testDoCalc" duration-ms="2" started-at="2017-04-14T17:34:11Z" data-provider="testData" finished-at="2017-04-14T17:34:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[*]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoCalc -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.wbl.test.CalculatorTest@3a82f6ef]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testDoCalc(double, double, char, double)[pri:0, instance:com.wbl.test.CalculatorTest@3a82f6ef]" name="testDoCalc" duration-ms="2" started-at="2017-04-14T17:34:11Z" data-provider="testData" finished-at="2017-04-14T17:34:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDoCalc -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.wbl.test.CalculatorTest@3a82f6ef]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.wbl.test.CalculatorTest@3a82f6ef]" name="afterClass" is-config="true" duration-ms="3" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.wbl.test.CalculatorTest@3a82f6ef]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.wbl.test.CalculatorTest@3a82f6ef]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.wbl.test.CalculatorTest -->
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="628" started-at="2017-04-15T00:34:11Z" finished-at="2017-04-15T00:34:11Z">
+      <class name="com.wbl.test.PrimeNumberTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.wbl.test.PrimeNumberTest@482f8f11]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.wbl.test.PrimeNumberTest@482f8f11]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testIsPrime1()[pri:0, instance:com.wbl.test.PrimeNumberTest@482f8f11]" name="testIsPrime1" duration-ms="305" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsPrime1 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.wbl.test.PrimeNumberTest@482f8f11]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.wbl.test.PrimeNumberTest@482f8f11]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testIsPrime2()[pri:0, instance:com.wbl.test.PrimeNumberTest@482f8f11]" name="testIsPrime2" duration-ms="302" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsPrime2 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.wbl.test.PrimeNumberTest@482f8f11]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.wbl.test.PrimeNumberTest@482f8f11]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.wbl.test.PrimeNumberTest@482f8f11]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testIsPrime3()[pri:0, instance:com.wbl.test.PrimeNumberTest@482f8f11]" name="testIsPrime3" duration-ms="3" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsPrime3 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.wbl.test.PrimeNumberTest@482f8f11]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.wbl.test.PrimeNumberTest@482f8f11]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.wbl.test.PrimeNumberTest@482f8f11]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.wbl.test.PrimeNumberTest -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="16" started-at="2017-04-15T00:34:11Z" finished-at="2017-04-15T00:34:11Z">
+      <class name="com.wbl.main.CalcCommonMethod">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.wbl.main.CalcCommonMethod@724af044]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.wbl.main.CalcCommonMethod@724af044]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="doCalc(double, double, char, double)[pri:0, instance:com.wbl.main.CalcCommonMethod@724af044]" name="doCalc" duration-ms="1" started-at="2017-04-14T17:34:11Z" data-provider="TestData" finished-at="2017-04-14T17:34:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4.2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[+]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[24.2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doCalc -->
+        <test-method status="PASS" signature="doCalc(double, double, char, double)[pri:0, instance:com.wbl.main.CalcCommonMethod@724af044]" name="doCalc" duration-ms="1" started-at="2017-04-14T17:34:11Z" data-provider="TestData" finished-at="2017-04-14T17:34:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[40.2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[*]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doCalc -->
+        <test-method status="PASS" signature="doCalc(double, double, char, double)[pri:0, instance:com.wbl.main.CalcCommonMethod@724af044]" name="doCalc" duration-ms="1" started-at="2017-04-14T17:34:11Z" data-provider="TestData" finished-at="2017-04-14T17:34:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[40.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doCalc -->
+        <test-method status="PASS" signature="doCalc(double, double, char, double)[pri:0, instance:com.wbl.main.CalcCommonMethod@724af044]" name="doCalc" duration-ms="1" started-at="2017-04-14T17:34:11Z" data-provider="TestData" finished-at="2017-04-14T17:34:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[%]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doCalc -->
+        <test-method status="PASS" signature="doCalc(double, double, char, double)[pri:0, instance:com.wbl.main.CalcCommonMethod@724af044]" name="doCalc" duration-ms="1" started-at="2017-04-14T17:34:11Z" data-provider="TestData" finished-at="2017-04-14T17:34:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-40.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[-2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doCalc -->
+        <test-method status="PASS" signature="doCalc(double, double, char, double)[pri:0, instance:com.wbl.main.CalcCommonMethod@724af044]" name="doCalc" duration-ms="1" started-at="2017-04-14T17:34:11Z" data-provider="TestData" finished-at="2017-04-14T17:34:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[40.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doCalc -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.wbl.main.CalcCommonMethod@724af044]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.wbl.main.CalcCommonMethod@724af044]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.wbl.main.CalcCommonMethod -->
+    </test> <!-- Test2 -->
+    <test name="Test3" duration-ms="24" started-at="2017-04-15T00:34:11Z" finished-at="2017-04-15T00:34:11Z">
+      <class name="com.wbl.test.HomePageTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.wbl.test.HomePageTest@cb5822]" name="beforeClass" is-config="true" duration-ms="4" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.wbl.test.HomePageTest@cb5822]" name="loginTest" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="recordingTest()[pri:0, instance:com.wbl.test.HomePageTest@cb5822]" name="recordingTest" duration-ms="1" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordingTest -->
+        <test-method status="PASS" signature="presentationTest()[pri:0, instance:com.wbl.test.HomePageTest@cb5822]" name="presentationTest" duration-ms="1" depends-on-groups="smoketest" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presentationTest -->
+      </class> <!-- com.wbl.test.HomePageTest -->
+    </test> <!-- Test3 -->
+    <test name="test4" duration-ms="6" started-at="2017-04-15T00:34:11Z" finished-at="2017-04-15T00:34:11Z">
+      <class name="com.wbl.main.CalcCommonMethod">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.wbl.main.CalcCommonMethod@724af044]" name="beforeSuite" is-config="true" duration-ms="6" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.wbl.main.CalcCommonMethod@724af044]" name="afterSuite" is-config="true" duration-ms="0" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.wbl.main.CalcCommonMethod -->
+      <class name="com.wbl.test.BasicStringTest">
+        <test-method status="PASS" signature="test3(java.lang.String)[pri:0, instance:com.wbl.test.BasicStringTest@d8355a8]" name="test3" duration-ms="3" started-at="2017-04-14T17:34:11Z" finished-at="2017-04-14T17:34:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hello Pallavi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+      </class> <!-- com.wbl.test.BasicStringTest -->
+    </test> <!-- test4 -->
+  </suite> <!-- Suite -->
+</testng-results>

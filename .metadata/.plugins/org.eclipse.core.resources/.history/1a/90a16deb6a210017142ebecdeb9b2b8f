@@ -1,0 +1,316 @@
+package com.wbl.page;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.wbl.helper.ByClass;
+
+public class AmazonHomePage {
+
+	WebDriver driver;
+
+	public AmazonHomePage(WebDriver driver) {
+		System.out.println("amazon home page constructor");
+
+		this.driver = driver;
+	}
+
+	
+	// ************************ Prime *********************************************
+	
+	
+	public Boolean primeMessageDisplay() {
+		
+	    WebDriverWait wait=new WebDriverWait(driver,20);
+	    
+	    WebElement element = wait.until(ExpectedConditions
+	    		.visibilityOfElementLocated(By.xpath(".//a[contains(@class,'nav-prime-try')]")));
+
+	//	 WebElement element = driver.findElement(By.xpath(".//a[contains(@class,'nav-prime-try')]"));
+			
+			Actions action = new Actions(driver);
+			
+	 		action.moveToElement(element).build().perform();
+
+	//		action.moveToElement(element);
+						
+		 	driver.findElement(By.xpath(".//*[@id='nav-prime-tooltip'and @class='nav-template nav-flyout-content']")).click();
+			 
+		 	
+		    
+		     wait=new WebDriverWait(driver,20);
+		    
+		    element = wait.until(ExpectedConditions
+		    		.visibilityOfElementLocated(By.cssSelector("div[class='nav-npt-text-title']")));
+			
+			
+			return element.isDisplayed();
+					
+	}
+	
+	
+	
+	
+	public AmazonLoginPage tryPrime() {
+	 		
+/*		
+ WebElement element = driver.findElement(By.xpath(".//a[contains(@class,'nav-prime-try')]"));
+		
+		Actions action = new Actions(driver);
+		action.moveToElement(element).build().perform();
+		
+		driver.findElement(By.xpath(".//*[@id='nav-prime-tooltip'and @class='nav-template nav-flyout-content']")).click();
+		 
+		div[class='nav-npt-text-title']*/
+		
+		driver.findElement(By.xpath(".//a[contains(@class,'nav-prime-try')]")).click(); // 'try prime' 
+		
+		
+//		driver.findElement(By.cssSelector("span[id='popover-button-announce']")).click();  // 'see more plans'
+		
+		System.out.println("111111111111");
+		
+ 		
+		
+		
+		String currWindowName = driver.getWindowHandle(); //gives current window name
+		
+		Set<String> windows = driver.getWindowHandles(); // gives all currrent open  windows 
+	
+	for(String win : windows){
+		
+		System.out.println("the open window are :: " + win);
+		
+		/*if (win != currWindowName){
+			//trying to switch control to child window
+			driver.switchTo().window(win); 
+		}   */
+	 
+	}
+		
+		
+		
+		
+		WebDriverWait wait = new WebDriverWait(driver,35);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath
+				(".//span[contains(text(),'Start your 30-day ')]//following::input[@class='a-button-input']"))).click();
+
+				
+				
+//				(".//span[contains(text(),'See more plans')]//preceding::input[@class='a-button-input']"))).click();
+				
+				
+//				(".//input[@class='a-button-input']//following::span[contains(text(),'See more plans')]"))).click();
+		
+ //		  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(" .//span[contains(text(),'See more plans')]"))).click();
+//		action.moveToElement(element).click(element);
+		
+		System.out.println("222222222222");
+
+		List<WebElement> buttons = new ArrayList<WebElement>();
+		
+	    wait = new WebDriverWait(driver,35);
+ 
+ 		System.out.println("3333333333333");
+
+		
+ 		
+	//	buttons = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".a-button-input")));
+ 		
+ 		buttons = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy
+				(By.xpath(".//i[contains(@class,'a-icon-radio-inactive')]")));
+		
+		
+		System.out.println("444444444444 button size " + buttons.size());
+
+		buttons.get(1).click();
+		
+		buttons = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".a-button-input")));
+		System.out.println("555555555 button size " + buttons.size());
+
+		buttons.get(2).click();
+ 		
+		System.out.println("");
+		System.out.println("title : " + driver.getTitle());
+		
+		
+		
+
+	  
+		return new AmazonLoginPage(driver);
+			 
+ 			 
+	 
+			
+	}
+	
+	
+	 
+	// ****************************** create account **************************************************
+ 	
+
+	public AmazonLoginPage createAccountPage() {
+
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("xpath-AccountLink"))).click();
+
+		WebElement element = wait
+				.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("xpath-AccountSubmit")));
+
+		element.click();
+
+	//	return driver.getTitle();
+
+	  return new AmazonLoginPage(driver);
+
+	}
+
+	// ****************************** end of create account *************************************
+
+	// ****************************** sign in **************************************************
+
+	public AmazonLoginPage getSignInPage() {
+
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("xpath-AccountLink"))).click();
+
+		// return driver.getTitle();
+
+		return new AmazonLoginPage(driver);
+
+	}
+
+	// ****************************** end of sign in **************************************************
+
+	// ****************************Department drop down count **************************************************
+
+	public int getDeptDropDownCount() {
+
+		WebDriverWait wait = new WebDriverWait(driver, 25);
+
+		List<WebElement> dropDownList = new ArrayList<WebElement>();
+
+		Actions action = new Actions(driver);
+
+		WebElement dropDown = wait
+				.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("css-deptLinkHover")));
+
+		action.moveToElement(dropDown).perform();
+
+		dropDownList = wait.until(
+				ExpectedConditions.visibilityOfAllElementsLocatedBy(ByClass.getByObject("xpath-countDropDownPanel")));
+
+		return dropDownList.size();
+
+	}
+
+	// ****************************end of Department drop down count **************************************************
+
+	// ****************************navigate department drop down **************************************************
+
+	public String navigateDeptDropDown(String firstChoice, String secondChoice) {
+
+		WebDriverWait wait = new WebDriverWait(driver, 40);
+
+		Actions action = new Actions(driver);
+
+		WebElement dropDown = wait
+				.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("xpath-deptLinkClick")));
+
+		action.moveToElement(dropDown).perform();
+
+		wait = new WebDriverWait(driver, 30);
+
+		WebElement nav = wait.until(ExpectedConditions
+				.visibilityOfElementLocated(ByClass.getByObject("xpath-bookPanelOnDropDownHover", firstChoice, "']")));
+
+		action.moveToElement(nav).perform();
+
+		wait = new WebDriverWait(driver, 30);
+
+		wait.until(ExpectedConditions
+				.visibilityOfElementLocated(ByClass.getByObject("xpath-clickOnChildrensBooks", secondChoice, "')]")))
+				.click();
+
+		return driver.getTitle();
+
+	}
+
+	// ****************************end of navigate department drop down *************************************
+
+	// **************************** accounts and list choices **********************************************
+
+	public String getAccountDetails(String listChoice) {
+
+		String[] opts = listChoice.split(",");
+
+		String choice = opts[0].trim();
+		String type = opts[1].trim();
+
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		driver.get("http://www.amazon.com");
+
+		WebDriverWait wait = new WebDriverWait(driver, 25);
+
+		Actions action = new Actions(driver);
+
+		List<WebElement> acc = new ArrayList<WebElement>();
+
+		// *********to click on Account and lists **********************
+
+		acc = wait
+				.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(ByClass.getByObject("css-headerLinkList")));
+
+		for (WebElement ele : acc) {
+
+			if (ele.getText().equals("Account & Lists")) {
+
+				System.out.println("header list : " + ele.getText());
+
+				action.moveToElement(ele).perform();
+				break;
+			}
+
+		}
+
+		wait = new WebDriverWait(driver, 30);
+
+		if (type.equals("list")) {
+			wait.until(
+					ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("xpath-listSearch", choice, "]")))
+					.click();
+
+		} else if (type.equals("account")) {
+			wait.until(ExpectedConditions
+					.visibilityOfElementLocated(ByClass.getByObject("xpath-accountSearch", choice, "]"))).click();
+		}
+
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return driver.getTitle();
+	}
+
+	// **************************** end of accounts and list choices **********************************************
+
+}

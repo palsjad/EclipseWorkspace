@@ -1,0 +1,138 @@
+package com.wbl.test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+ import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.wbl.base.BaseTest;
+ import com.wbl.helper.ExcelHelper;
+import com.wbl.page.AmazonCreateAccountPage;
+import com.wbl.page.AmazonHomePage;
+import com.wbl.page.AmazonLoginPage;
+
+public class AmazonCreateAccountTest extends BaseTest {
+	
+	
+	AmazonCreateAccountPage aca  ;
+	AmazonLoginPage alp;
+	AmazonHomePage ahp;
+	
+	Object[][] data = null;
+	
+	/*String nm = ""; 
+	String userId= "";
+	String pwd= ""; 
+	String pwd2= ""; 
+	*/
+	
+	
+	@BeforeClass
+	public void before() {
+		
+		  aca = new AmazonCreateAccountPage(driver);
+ 		alp = ahp.createAccountPage();
+		
+  //		System.out.println("title : " + title);
+		
+	}
+	
+	/*
+	@Test
+	public void getSignInPageTest() {
+		
+		
+String title = aca.getSignInPage();
+		
+		System.out.println("title : " + title);
+		
+		
+	}
+	*/
+	 
+	 
+	@DataProvider(name="accountDetails")
+	public Object[][] readDetails() {
+		
+//		Object[][] data = ExcelHelper.getAccountData("test-data\\AmazonTestDataAccount.xlsx");//  test-data\\AmazonTestData.xlsx
+		
+		Object[][] data = ExcelHelper.getExcelData("test-data\\AmazonLoginTestData.xlsx","createAccount");//  test-data\\AmazonTestData.xlsx
+	
+	/*	  nm = data[0][0].toString();
+		  userId= data[0][1].toString();
+		  pwd= data[0][2].toString();
+		  pwd2= data[0][3].toString();
+		  
+ 			System.out.println(" inside test parameters " + nm + " " + userId + "  " + pwd + "  " + pwd2) ;*/
+		
+		
+		return data;
+	} 
+	
+ 	
+//	public void  enterDetailsTest(Object[][] accDetails) {
+	
+	
+	@Test(dataProvider="accountDetails")
+ 	public void  enterDetailsTest(String nm, String userId, String pwd, String pwd2) {
+		
+ 	 	List<String> details = new ArrayList<String>();
+	  /*  String nm = "pj";
+	    String userId = "p.jad@xyz.com" ;
+	    String pwd = "xyz123";
+	    String pwd2 = "xyz123";*/
+	   
+        details.add(nm);
+        details.add(userId);
+        details.add(pwd);
+         details.add(pwd2);
+   
+ 		
+ 		 
+        System.out.println(" inside test details "  + details.get(0) + "  " +  details.get(1) + "  "  + details.get(2) );
+        
+        System.out.println("before entring"); 
+		 
+  		Assert.assertEquals(aca.enterDetails(details), "pallavi");
+		
+ //    Assert.assertEquals(aca.enterDetails( nm,   userId,   pwd,  pwd2), "pallavi");
+
+   //           aca.enterDetails( nm,   userId,   pwd,  pwd2) ;
+ 
+//		String page = aca.enterDetails();
+		
+//		System.out.println("final title : " + page);
+		
+//		System.out.println(" inside test parameters " + nm + " " + userId + "  " + pwd);
+		
+		
+   
+	}
+	
+/*	@Test
+ 	public void  enterDetailsTest1(String nm, String userId, String pwd, String pwd2) {
+		
+		List<String> details = new ArrayList<String>();
+		  
+		   
+	        details.add(nm);
+	        details.add(userId);
+	        details.add(pwd);
+	         details.add(pwd2);
+	   
+	 		
+	 		 
+	        System.out.println(" inside second test details "  + details.get(0) + "  " +  details.get(1) + "  "  + details.get(2) );
+	        
+	        System.out.println("before entring the second time "); 
+			 
+	  		Assert.assertEquals(aca.enterDetails(details), "pallavi");
+		
+	}
+
+	
+*/
+}

@@ -58,7 +58,8 @@ public class LoginPageTest extends BaseTest {
 		
 		Object[][] data = ExcelHelper.getData("test-data\\login-testdata.xlsx");
 		
-		System.out.println("DataProvider-testData()  (excel reader) loginPageTest " + data[0][0] + "  " + data[1][1]); 
+		System.out.println("DataProvider-testData()  (excel reader) loginPageTest " + data[0][0] + "  " + data[0][1]+ "  " + data[0][2]); 
+		System.out.println("DataProvider-testData()  (excel reader) loginPageTest " + data[1][0] + "  " + data[1][1]+ "  " + data[1][2]); 
 
 		
 		return data;

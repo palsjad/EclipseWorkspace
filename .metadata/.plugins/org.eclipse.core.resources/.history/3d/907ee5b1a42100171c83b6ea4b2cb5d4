@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+<suite name="Suite" >
+ 
+ <!-- ********************************************** -->
+ 
+  <test name="LoginTest"> 
+  <classes> 
+ 
+      <class name ="com.wbl.test.AmazonLoginTest">
+    <methods>
+      <include name="enterLoginDetailsTest"></include>
+      </methods>
+      </class>
+    </classes>
+  </test>  
+  
+ <!-- ********************************************** -->
+ 
+  <test name="CreateAccountTest">
+  <classes>
+  <class name="com.wbl.test.AmazonLoginTest">
+  <methods>
+      <include name="enterDetailsTest"></include>
+      </methods>
+  
+  </class>
+  </classes>
+ </test>
+ 
+ 
+</suite>

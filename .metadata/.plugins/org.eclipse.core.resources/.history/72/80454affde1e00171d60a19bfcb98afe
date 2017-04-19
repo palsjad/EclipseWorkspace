@@ -1,0 +1,25 @@
+xpath-AccountLink:.//*[@id='nav-link-accountList']/span[1]
+xpath-AccountSubmit:.//a[@id='createAccountSubmit']
+css-deptLinkHover:.nav-line-2
+xpath-countDropDownPanel:.//div[contains(@class,'nav-tpl-itemList')]/span[contains(@class,'nav-hasPanel')]
+xpath-deptLinkClick:.//span[@class='nav-line-2'][text()='Departments']
+xpath-bookPanelOnDropDownHover1:.//span[contains(@class,'nav-hasPanel') and @data-nav-panelkey='BooksPanel']
+xpath-bookPanelOnDropDownHover:.//span[contains(@class,'nav-hasPanel') and @data-nav-panelkey='
+xpath-clickOnChildrensBooks1:.//span[@class='nav-text'][contains(text(),'Children')]
+xpath-clickOnChildrensBooks:.//span[@class='nav-text'][contains(text(),'
+css-headerLinkList:span[class='nav-line-2']
+xpath-accountAndLinksSearch1://div[@id='nav-al-your-account']//following::a[2]
+xpath-accountAndLinksSearch://div[@id='nav-al-your-account']//following::a[
+xpath-searchDropDown:.//select[@id='searchDropdownBox']
+id-searchbox:twotabsearchtextbox
+xpath-searchSubmit:.//input[@class='nav-input'][@type='submit']
+xpath-priceSelector:.//span[contains(text(),'
+xpath-priceSelector-2:')]
+xpath-sortOptions:.//*[@id='sort']
+xpath-sortedPrices:.//span[@class='a-size-small s-padding-right-micro']
+css-goToHomePage:a[id=nav-your-amazon]
+xpath-personSelector:.//a[contains(text(),'
+id-nextPage:pagnNextString 
+xpath-confirmCurrentPage:.//span[@class='pagnCur']
+css-listForCustReviews:[class='a-icon-alt']
+xpath-listForCustReviewsX:.//span[@class='a-icon-alt' and contains(text(),'& Up')]

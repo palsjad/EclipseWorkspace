@@ -1,0 +1,46 @@
+
+//  Write a program to check for a palindrome string
+
+package com.wbl.assignments.Strings;
+
+public class PalindromeString {
+
+	public static void main(String[] args) {
+		
+		
+		String palindrome = "kayks";
+		
+		
+		char[] ch = palindrome.toCharArray();
+ 		
+		char[]	chReverse = new char[5];
+		
+//	   int[] anArray = new int[10];
+
+
+		
+		for(int i = 0; i <= ch.length-1; i ++ ) {
+			
+			chReverse[i] = ch[i];
+			
+		}
+		
+	//	int j = 0;
+		for (int i = 0,  j = chReverse.length-1; i <= ch.length-1; i++, j--) {
+			 
+			if(ch[i] == chReverse[j]){
+				System.out.println("original word spelling : " + ch[i]);
+				System.out.println("Reverse word spelling : " + chReverse[i]);
+			}
+			else {
+				System.out.println("This word is not a Palindrome");
+			}
+			
+			
+		}
+			
+			
+ 
+	}
+
+}

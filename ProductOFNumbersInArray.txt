@@ -1,0 +1,57 @@
+Given an array of numbers - every index in output should have the product of other index numbers.
+
+eg: i/p: {5,7,10,2}
+o/p: {140,100,70,350}
+
+******************************************************************************
+
+package com.wbl.practice;
+
+import java.util.Arrays;
+
+public class ProductOfNumbersInArray {
+	
+	
+	
+	public static void main (String args[]) {
+
+
+
+		int[] numbers = {5,7,10,2};
+
+
+
+		int[] result = new int[4];
+		int i = 0;
+		int j = 0;
+		int val = 1;
+		
+	    System.out.print("\n\nThe given string is : " + Arrays.toString(numbers) );
+
+		for(i = 0;i < numbers.length; i++){
+             
+		 for(j = i, i = 0; i < numbers.length; i++) {
+			  
+ 
+		      if( i != j) {
+ 
+		      val = numbers[i] * val;
+		      
+ 
+		   }
+		       
+			  
+		 }
+  
+
+	     result[j] = val; 
+	     val = 1;
+	     i = j;
+		}
+
+    System.out.print("\n\nresult is : " + Arrays.toString(result) );
+ 
+		}
+
+}
+******************************************************************************

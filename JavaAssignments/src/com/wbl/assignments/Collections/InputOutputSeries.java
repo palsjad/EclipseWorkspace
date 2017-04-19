@@ -20,6 +20,9 @@ public class InputOutputSeries {
 		Scanner scan = new Scanner(System.in);
 		List<String> result = new ArrayList<String>();
 
+//		InputOutputSeries ios= new InputOutputSeries();
+//		
+//		ios.usingList(scan);
         
 		String st1 = "";		
 		String st2 = "";
@@ -29,6 +32,9 @@ public class InputOutputSeries {
 		st1 =  scan.nextLine();
  	 
 		System.out.println("Enter the 5 numbers in the  second series with a space in between");
+	 
+		
+		
 		st2 =   scan.nextLine();
 
 		 scan.close();
@@ -72,9 +78,9 @@ public class InputOutputSeries {
 	 System.out.println(" the Result is : " );
 
 	 
-	 for(i = 0; i < result.size() -1; i++){
-		 System.out.print(result.get(i));
-		 
+	 for(i = 0; i < result.size() -1; i = i + 2){
+		 System.out.print(result.get(i)+ result.get(i+1));
+		 System.out.println(", ");
 	 }
 	 
 	}
@@ -86,7 +92,7 @@ public class InputOutputSeries {
 	
 	
 	
- 	public void UsingList(Scanner scan) {
+ 	public void usingList(Scanner scan) {
 		
 		List<String> series1 = new ArrayList<String>();
  		List<String> series2 = new ArrayList<String>();
@@ -94,6 +100,9 @@ public class InputOutputSeries {
 		
 		System.out.println("Enter the 5 numbers in the first series with a space in between");
 		     series1.add(scan.nextLine());
+		     
+		System.out.println("Enter the 5 numbers in the second series with a space in between");
+
 		     series2.add(scan.nextLine());
 		     
 		    

@@ -15,26 +15,25 @@ public class MissingNumsInSortedArray {
 		
 		
 		
-		// to print the given array
-		//********************************************	
+// to print the given array
+//********************************************	
+		
+		System.out.print("\n\nThe given array is :  " );
+	
+		for(int j = 0; j <= arr.length-1; j++) {
+			System.out.print(arr[j] + "  "   );
+		}
 				
-				 System.out.print("\n\nThe given array is :  " );
-			
-				for(int j = 0; j <= arr.length-1; j++) {
-					System.out.print(arr[j] + "  "   );
-				}
-				
-		System.out.println("\n\n");
+	    	System.out.println("\n\n");
 		//********************************************			
 		
  
 		int num, num1, temp = 0;
-
+				
 		System.out.print ("The missing numbers are : " );
 		
 		for(int i = 0; i < arr.length-1; i++){
-	//		System.out.println("inside for loop " + i + "  " + arr[i] + " " + arr[i+1]);
-			
+ 			
 			num = arr[i];   // assign the first value to num
 			num1 = arr[i+1]; // assign the second value to num1 and find the values missing between these 2 numbers
 			
@@ -42,15 +41,13 @@ public class MissingNumsInSortedArray {
 				temp = num + 1;
 				while(temp < num1){
 					
-                System.out.print(temp++ + " "  );
-
-	//			System.out.println("the missing numbers are : " + temp++ );
-				
+                System.out.print(temp++ + " "  );				
 			}
-		}
-            System.out.print("   "  );
+			
+	}
+        System.out.print("   "  );
 
-		}	
-		
+	}	
+	
 	}
 }

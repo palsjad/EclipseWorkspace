@@ -1,0 +1,150 @@
+package com.wbl.helper;
+
+import java.io.FileInputStream;
+ import java.io.IOException;
+
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelHelper {
+
+//	static  Logger logger = LogManager.getLogger(ExcelHelper.class);
+	
+	public static Object[][] getExcelData(String fileName, String sheetName) {
+     
+		Object data[][] = null;
+
+		XSSFWorkbook wb = null;
+		
+		 
+		try {
+			// wb = new XSSFWorkbook(new FileInputStream(Constants.PATH +
+			// "test-data\\AmazonTestData.xlsx"));
+
+			wb = new XSSFWorkbook(new FileInputStream(Constants.PATH + fileName));
+
+//			XSSFSheet sheet = wb.getSheet("Clothing");
+			
+			
+			XSSFSheet sheet = wb.getSheet(sheetName);
+
+			int rows = sheet.getLastRowNum();
+			int phRows = sheet.getPhysicalNumberOfRows();
+ 
+			System.out.println("no of rows : " + phRows);
+
+			data = new Object[rows][];
+
+			for (int i = 1; i <= rows; i++) {
+
+				XSSFRow row = sheet.getRow(i);
+
+				int cols = row.getLastCellNum();
+
+				System.out.println("no of cols: " + cols + "row number : " + i);
+
+				String[] totalCols = new String[cols];
+
+				for (int j = 0; j < cols; j++) {
+
+					totalCols[j] = row.getCell(j).getStringCellValue();
+
+					System.out.println(" column details : " + totalCols[j]);
+
+				}
+				
+                 if(i <= rows) {
+                	 
+				data[i - 1] = totalCols;
+				
+                 }
+ 			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (null != wb) {
+
+					wb.close();
+				}
+
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+		}
+
+		return data;
+
+	}
+	
+	
+	public static Object[][] getAccountData(String fileName) {
+		
+		
+		Object data1[][] = null;
+
+		XSSFWorkbook wb1 = null;
+		
+		
+        try {
+			wb1 = new XSSFWorkbook (new FileInputStream(Constants.PATH+fileName));
+			
+			
+			XSSFSheet sheet1 = wb1.getSheet("createAccount");
+			int rows1 = sheet1.getLastRowNum();
+
+			System.out.println("no of rows : " + rows1);
+
+			data1 = new Object[rows1][];
+
+			for (int i = 1; i <= rows1; i++) {
+
+				XSSFRow row1 = sheet1.getRow(i);
+
+				int cols = row1.getLastCellNum();
+
+				System.out.println("no of cols: " + cols);
+
+				String[] totalCols = new String[cols];
+
+				for (int j = 0; j < cols; j++) {
+
+					totalCols[j] = row1.getCell(j).getStringCellValue();
+
+					System.out.println(" column details : " + totalCols[j]);
+
+				}
+
+	//			data1[i - 1] = totalCols;
+				
+				 if(i <= rows1) {
+						data1[i - 1] = totalCols;
+		                 }
+
+ 			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (null != wb1) {
+
+					wb1.close();
+				}
+
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+		}
+
+		return data1;
+
+	}
+	
+}

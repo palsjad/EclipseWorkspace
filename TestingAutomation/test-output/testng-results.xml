@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="48607" started-at="2017-02-01T06:16:56Z" finished-at="2017-02-01T06:17:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="48607" started-at="2017-02-01T06:16:56Z" finished-at="2017-02-01T06:17:45Z">
+      <class name="com.TestingAutomation.WebDriverAutomationTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.TestingAutomation.WebDriverAutomationTest@2b98378d]" name="before" is-config="true" duration-ms="2344" started-at="2017-01-31T22:16:56Z" finished-at="2017-01-31T22:16:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="testWblHomePage()[pri:0, instance:com.TestingAutomation.WebDriverAutomationTest@2b98378d]" name="testWblHomePage" duration-ms="46247" started-at="2017-01-31T22:16:58Z" finished-at="2017-01-31T22:17:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWblHomePage -->
+      </class> <!-- com.TestingAutomation.WebDriverAutomationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

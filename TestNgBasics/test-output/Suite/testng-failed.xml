@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="test4(failed)">
+    <parameter name="greet" value="Hello Pallavi"/>
+    <classes>
+      <class name="com.wbl.test.PrimeNumberTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.wbl.test.PrimeNumberTest -->
+      <class name="com.wbl.test.BasicTest">
+        <methods>
+          <include name="test3" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.wbl.test.BasicTest -->
+      <class name="com.wbl.test.CalculatorTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.wbl.test.CalculatorTest -->
+      <class name="com.wbl.test.HomePageTest">
+        <methods>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.wbl.test.HomePageTest -->
+      <class name="com.wbl.main.CalcCommonMethod">
+        <methods>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.wbl.main.CalcCommonMethod -->
+    </classes>
+  </test> <!-- test4(failed) -->
+</suite> <!-- Failed suite [Suite] -->

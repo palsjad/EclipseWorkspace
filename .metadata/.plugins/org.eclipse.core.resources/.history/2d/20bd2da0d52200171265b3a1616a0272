@@ -1,0 +1,94 @@
+/*
+
+Write a program to find out the total number of jumps he has make, to escape from the Bhopal jail.
+
+Input Format
+	Your function has to take three arguments where
+	
+	Argument1 : An integer depicting X   - jump (5)
+	Argument2 : An integer depicting X   - slide doen by ( 1 )
+	Argument3 : An array of N integers having the height of each wall {10, 12}
+
+*/
+
+package com.wbl.practice;
+
+import java.util.Scanner;
+
+public class JailBreak {
+
+	
+	
+	
+	
+	public static void main(String args[] ) {
+		
+		int jump = 5;
+		int slide = 1;
+		int[]wallHeight  = {13,20, 25};
+		
+		
+		JailBreak jb = new JailBreak();
+		
+		Scanner scan = new Scanner(System.in);
+		
+	//		scan.nextLine();
+			
+			scan.close();
+		
+		
+		jb.totalJumps(jump,slide,wallHeight);
+		
+ 	}
+	
+	
+	public int totalJumps(int jump, int slide, int[] wallHeight) {
+		
+		int total = 0;
+		
+		
+		int temp = 0;
+		int wall = 0;
+ 
+	for(int i = 0  ; i < wallHeight.length; i++)	{
+		
+
+		 wall = wallHeight[i];
+		 
+			System.out.println("wall  : " + wall );
+
+	  
+
+		for (total = 0; wall >= 5; total++ ) {
+			
+			temp = wall - (jump - slide);  // temp = 9-4 : 5
+			
+			System.out.println("temp : " + temp);
+
+			wall = temp;
+		//	temp = 0;
+		 
+			System.out.println(" wall after : " + wall);
+
+ 
+				
+		}	
+		
+		System.out.println("total : " + total);
+
+		}
+		
+		if (wall <= 5 ) {
+			
+			total++;
+		}
+		
+		
+		System.out.println("final total : " + total);
+
+		return total;
+		
+		
+	}
+	
+}

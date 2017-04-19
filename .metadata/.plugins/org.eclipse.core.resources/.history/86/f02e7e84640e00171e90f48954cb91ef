@@ -1,0 +1,54 @@
+ 
+
+/*
+Write a program which takes an input series as a1,a2,a3....an,b1,b2,b3...bn 
+and produces output as a1,b1,a2,b2,a3,b3.......,an,bn.
+*/
+
+
+package com.wbl.assignments.Collections;
+
+import java.util.ArrayList;
+//import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+public class InputOutputSeriesCopy {
+
+	public static void main(String[] args) {
+		
+		List<String> temp  = new ArrayList<String>();
+ 
+		List<String> result1 = new ArrayList<String>();
+		List<String> result2 = new ArrayList<String>();
+
+ 
+        
+	//String[] temp = String {"a1,a2,a3,an,b1,b2,b3,bn"};	
+		 
+	 String st1 = "a1,a2,a3,an,b1,b2,b3,bn";
+	 String[] val = st1.split(",");
+
+		
+	//	char[] chtemp = new char[2];
+	    String[] letters = new String[2];
+		int j = 0;
+	 
+		for (int i = 0; i < val.length; i++ ){
+			
+			System.out.print(val[i]);
+		 
+
+			letters = val[i].split("");
+			System.out.print("  " +letters[0] + " " + letters[1] + "  ");
+
+		}
+		
+		 
+	 
+
+	
+	}	
+	
+	
+}

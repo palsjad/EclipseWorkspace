@@ -31,7 +31,7 @@ public class DynamicUserInput {
 	    	System.out.println("Enter your Second Number : ");
 	    	String input2 = scanner.next();
 	    	scanner.close();
-	    	
+	   
 	    	int num1 = Integer.parseInt(input1);
 	    	int num2 = Integer.parseInt(input2);
 	    	

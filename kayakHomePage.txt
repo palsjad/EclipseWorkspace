@@ -1,0 +1,65 @@
+package com.auto.page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class HomePage {
+	
+	WebDriver driver;
+	
+public HomePage(WebDriver driver) {
+	
+	this.driver = driver;
+}
+
+	public driver getKayakHomePage(WebDriver driver){
+		
+		driver.get("https://www.kayak.com");
+ 		
+	}
+	
+	
+	public void clickHotels(){
+		
+		
+		driver.findElement(By.className(" .formLink.hotelsLink")).click();
+		
+		Actions action = new Actions(driver);
+		
+		WebDriver element = driver.findElement(By.xpath(".//div[@id='EKjC-next'][@aria-label='Next month']"));  //go to May
+
+		
+	//	driver.findElement(By.cssSelector("[id*='-location'][placeholder='Where']")).sendKeys("Paris France");
+		.//*[@id='city-36014-6409']/div[contains(text(),'aris, France')]
+		
+		driver.findElement(By.xpath("input[@aria-label='Check-in date input']")).click();
+ 
+ 
+		
+	     element = driver.findElement(By.xpath(".//div[@id='EKjC-next'][@aria-label='Next month']"));  //go to May
+		action.moveToElement(toElement).perform();
+		
+		 element = driver.findElement(By.xpath(".//div[@id='EKjC-next'][@aria-label='Next month']"));  // go to June
+		 action.moveToElement(toElement).perform();
+		
+		 element = driver.findElement(By.xpath(".//div[@data-val='1496386800000']/div[text()='2']"));  // go to June
+		 action.moveToElement(toElement).perform();      //choose date 2
+		 
+		 element = driver.findElement(By.cssSelector("#iBHT-checkOut-input"));  // go to June
+		 action.moveToElement(toElement).perform(); 
+		 
+		 element = driver.findElement(By.xpath(".//div[@data-val='1497682800000']/div[text()='17']"));  // go to June
+		 action.moveToElement(toElement).perform(); 
+
+		 
+		 element = driver.findElement(By.xpath("".//a[@aria-pressed='true']/div[text()='1 room, 2 guests']");  // to click on the rooms
+		
+	}
+	
+	
+	
+	
+	
+
+}

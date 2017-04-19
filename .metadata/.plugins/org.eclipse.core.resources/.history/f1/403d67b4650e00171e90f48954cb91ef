@@ -1,0 +1,92 @@
+ 
+
+/*
+Write a program which takes an input series as a1,a2,a3....an,b1,b2,b3...bn 
+and produces output as a1,b1,a2,b2,a3,b3.......,an,bn.
+*/
+
+
+package com.wbl.assignments.Collections;
+
+import java.util.ArrayList;
+//import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+public class InputOutputSeriesCopy {
+
+	public static void main(String[] args) {
+		
+		List<String> temp  = new ArrayList<String>();
+ 
+		List<String> result1 = new ArrayList<String>();
+		List<String> result2 = new ArrayList<String>();
+
+ 
+        
+	//String[] temp = String {"a1,a2,a3,an,b1,b2,b3,bn"};	
+		 
+	 String st1 = "a1,a2,a3,an,b1,b2,b3,bn";
+	 String[] val = st1.split(",");
+
+		
+	//	char[] chtemp = new char[2];
+	    String[] letters = new String[2];
+		int j = 0;
+	 
+		letters = val[0].split(""); // splitting a1 in to 'a' and '1'
+		
+		String res = letters[0];   // storing 'a' in the res
+		
+		System.out.println("res " +  res);
+		
+		
+		for (int i = 0; i < val.length; i++ ){
+			
+			System.out.print(val[i]);
+		 
+
+			letters = val[i].split("");
+			System.out.print("  " +letters[0] + " " + letters[1] + "  ");
+		
+			
+			if (letters[0].equals(res)){
+				
+				result2.add(val[i]);
+			}
+			
+			else {
+				result1.add(val[i]);
+
+			}
+			
+			
+
+		}
+		
+		
+		
+		int i = 0;
+
+		
+		for(i = 0, j = 0; i < result1.size(); i++) {
+			 System.out.println(result1.get(i));
+
+			
+		}
+		
+		
+ 
+	 for(i = 0, j = 0; i < result1.size() && j < result2.size(); i++, j++ ) {
+		 
+		 System.out.print(result2.get(i) + " " + result1.get(j) + " ");
+		 
+		 
+		 
+	 }
+
+	
+	}	
+	
+	
+}

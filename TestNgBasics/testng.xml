@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--   <suite name="Suite"  parallel="methods" junit="true"> -->
+
+<suite name="Suite" >
+  <test name="Test">
+  
+    <classes>
+ <!--       <class name="com.wbl.test.BaseClass"></class>    -->
+ 
+      <class name="com.wbl.test.CalculatorTest">
+      
+ <!--  
+   <methods>
+      <include name="doCalc3"></include>
+   </methods> 
+ - -->  
+  
+  </class>
+  </classes>    
+  </test>
+ 
+ <!-- ********************************************** -->
+ 
+  <test name="Test1"> 
+  <classes> 
+<!--   <class name="com.wbl.test.BaseClass"></class> wedontneed this as we hvextended the baseClass--> 
+
+      <class name ="com.wbl.test.PrimeNumberTest">
+ <!--       
+      <methods>
+      <include name="testIsPrime3"></include>
+      </methods>
+  - -->       
+      </class>
+    </classes>
+  </test>  
+  
+ <!-- ********************************************** -->
+ 
+  <test name="Test2">
+  <classes>
+  <class name="com.wbl.main.CalcCommonMethod">
+  </class>
+  </classes>
+ </test>
+ 
+  
+ <!-- ********************************************** -->
+
+  <test name="Test3">
+  
+ 
+ 
+  <groups>
+  <run>
+  <include name="smoketest"></include>      
+  <include name="functionalitytest"></include>
+  </run>
+  </groups>
+   
+  <classes>
+  
+  <class name="com.wbl.test.HomePageTest">
+  </class>
+  </classes>
+  </test> 
+ <!-- ********************************************** --> 
+<test name="test4">
+  <parameter name="greet" value="Hello Pallavi"></parameter>  <!-- these parameters are available to all the tests within the Test3  -->
+
+<classes>
+
+ <class name="com.wbl.test.BasicStringTest">    </class>
+</classes>
+
+</test>
+</suite>

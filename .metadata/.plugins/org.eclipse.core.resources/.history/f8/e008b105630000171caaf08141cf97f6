@@ -1,0 +1,67 @@
+package com.TestingAutomation;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class WaitsClass {
+
+WebDriver driver;
+	
+	@BeforeTest
+	public void before() {
+      System.setProperty("webdriver.chrome.driver", "C:\\QA\\EclipseWorkspace\\TestingAutomation\\resources\\chromedriver.exe");
+	  driver = new ChromeDriver();
+	} 
+	
+	@Test
+	public void  waitsTest() throws InterruptedException {
+		
+     driver.get("https://www.walmart.com");	
+		
+ 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);  
+	 
+	 WebElement elem = driver.findElement(By.id("global-search-input"));
+	 
+	 elem.sendKeys("laptop");
+	 
+	 driver.findElement(By.cssSelector(".header-GlobalSearch-submit.btn")).click();
+	 
+ 
+ 
+	 driver.findElement(By.xpath("//div[contains(text(),'Best sellers') and @class='chooser-option-current']")).click(); ;
+ 	 
+	 Thread.sleep(500);
+   
+    Select sel = new Select(driver.findElement(By.cssSelector("select[name='searchUtilBarSort_select'])")));
+    
+
+	List<WebElement> optionsList = sel.getOptions();
+    
+    for(WebElement el : optionsList) {
+    	
+    	System.out.println("the list is : " + el.getText());    	
+    	
+    }
+    
+    
+ System.out.println("after elem.clcikk\n"); 
+ 
+
+	  driver.close();
+
+	}
+	
+	
+	
+	 
+	 
+	
+}

@@ -1,0 +1,31 @@
+package com.wbl.assignments;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArmstrongDemo {
+
+	public static void main(String[] args) {
+		
+List<String> num = new ArrayList<String>();
+List<int> num1 = new ArrayList<int>();
+
+num.add("153");
+
+System.out.println(num);
+
+//char[] charName = num.toArray();
+//System.out.println(num[0],num[1],num[2]);
+
+//for(int sz = num.size(), i = 0; i < sz; i++){
+//	
+//	
+//}
+
+ 
+		 
+	 
+
+	}
+
+}

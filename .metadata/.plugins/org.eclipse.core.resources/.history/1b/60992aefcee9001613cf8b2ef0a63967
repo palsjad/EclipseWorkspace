@@ -1,0 +1,22 @@
+
+// Write a program which accepts a string like "This is nice" and converts it to a string like "This1 is2 nice3".
+
+package com.wbl.assignments.Strings;
+
+public class ConvertString {
+
+	public static void main(String[] args) {
+		
+		
+		String sentence = "I am a girl";
+		
+		String[] words = sentence.split(" ");
+		
+		for(String s : words) {
+			System.out.println(s);
+		}
+		
+
+	}
+
+}

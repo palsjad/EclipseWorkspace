@@ -1,0 +1,28 @@
+package com.wbl.test;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.wbl.base.BaseTest;
+import com.wbl.page.AmazonPrimePage;
+
+public class AmazonPrimePageTest  extends BaseTest {
+	
+	AmazonPrimePage app;
+	
+	
+	@BeforeClass
+	public void before() {
+		
+		app = new AmazonPrimePage(driver);
+		
+	}
+
+	
+	@Test
+	public void getPrime1Test() {
+		
+		Assert.assertNotNull(app.getPrime1());
+	}
+}

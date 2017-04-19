@@ -1,0 +1,49 @@
+
+/*   Write a program to check if a given string of parenthesis has balanced parenthesis or not.
+     For example a string as "(())" is a valid string where as strings like ")(" or "(()))" are not valid strings.
+*/
+
+
+package com.wbl.assignments.Strings;
+
+public class BalancedParenthesis {
+
+	public static void main(String[] args) {
+		
+		String temp = "(()";
+		
+		char[] paren = temp.toCharArray();
+		
+/*      char paren1 = ')';
+		char paren2 = '('; 
+		
+		int value1 = (int) paren1; // casting
+		int value2 = (int) paren2; // casting
+*/
+		
+		int i, j, k;
+				
+		for(i = 0, j = 0,k = 0; i <= paren.length-1; i++){
+			
+			if(paren[i] == '('){
+				j++;
+			}
+			else if (paren[i] == ')'){
+				k++;
+			}
+			
+		}
+		
+		if (j == k){
+			
+			System.out.println("The parenthesiss' are balanced");
+		}
+		else {
+			System.out.println("The parenthesiss' are not balanced");
+
+		}
+		
+		
+	}
+
+}

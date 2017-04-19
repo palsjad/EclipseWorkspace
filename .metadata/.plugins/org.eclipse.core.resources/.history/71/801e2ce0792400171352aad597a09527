@@ -1,0 +1,526 @@
+package com.wbl.page;
+
+  import java.util.List;
+ import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.wbl.helper.ByClass;
+
+public class AmazonAddToCart {
+
+	WebDriver driver;
+	
+	AmazonSearch as ;
+	
+	double cartTotal = 0.0;
+
+  
+	public AmazonAddToCart(WebDriver driver) {
+
+		this.driver = driver;
+		as = new AmazonSearch(driver);
+
+	}
+
+ 
+// **************************** add to cart ****************************************
+
+ /*	public String addItem(String item, String dropDownSearch, String person, String price, String sortType, String searchOpt ) {
+		
+		
+		as.allDropDown(dropDownSearch);
+		as.dropDownChoice(item, person);
+		as.sortChoice(price, sortType);
+		as.searchResults(searchOpt);
+		
+}	
+		*/
+ 		
+	
+	
+		public String addItem(String item  ) {
+
+	WebDriverWait wait = new WebDriverWait(driver, 20);	
+	
+	wait.until(ExpectedConditions
+			.visibilityOfElementLocated(ByClass.getByObject("xpath-cartItem",item,"')]"))).click();
+	
+	
+	System.out.println("the add item title is : " + driver.getTitle());
+	
+	return driver.getTitle();
+	
+
+	}
+	
+	
+// *********************************************************************************************	
+	 
+	
+	public String addSize(String itemSize ) {
+		
+		System.out.println("the itemsize is  is : " + itemSize);	
+
+  	String result = "" ;
+		
+	if (itemSize.equals(" ")) {
+		return "Size not applicable for this item as its empty" ;
+	}
+	
+	 String[] str = itemSize.split(",");
+	 
+	  String size = str[0];
+	 
+ 	 
+	  String size1 = str[1];   // value of option
+     
+
+	System.out.println("the size enterred is : " + str[0] + "  " + str[1]);
+	
+	try {
+		Thread.sleep(3000);
+	} catch (InterruptedException e) {
+
+		e.printStackTrace();
+	}
+	
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+ 	
+/*	WebDriverWait wait = new WebDriverWait(driver, 35);	
+
+	WebElement element = wait.until(ExpectedConditions
+			.visibilityOfElementLocated(ByClass.getByObject("css-addSize")));*/
+	
+/*	
+	WebElement element = driver.findElement(By.id("month"));
+	Select sel = new Select(element);		
+	sel.selectByIndex(5);*/
+
+	WebElement element = driver.findElement(By.id("native_dropdown_selected_size_name"));
+ 	
+	Select sel = new Select(element);
+	
+	List<WebElement> sizeOpts = sel.getOptions();
+	
+	  for(WebElement opts : sizeOpts) {
+      	
+       	
+ //     	if  (size.trim().equals(opts.getText().trim() ))  {
+		  
+      	System.out.println("the shoe option value " + opts.getAttribute("id")  + "  " + opts.getAttribute("class"));
+		  
+		  if(size.equalsIgnoreCase(opts.getAttribute("id")))   {
+       		
+      	   if (opts.getAttribute("class").equals("dropdownAvailable")) {
+      		   
+       		
+  //      	 	 sel.selectByVisibleText(size.trim());
+      		   
+      		 sel.selectByIndex(Integer.parseInt(size1));
+        	 	 
+        	 	 result = " size selelcted" ;
+        	 	 break;
+      	   }   	   
+      	 
+        	 
+        	 }
+      	
+        }               // end of for loop
+        	 
+   	
+	return result;
+      	
+	}
+	
+	
+// *********************************************************************************************	
+	
+	public String addColor( String color ) {
+		
+	System.out.println("the color is : " + color);	
+ 	 	String result = "" ;
+			
+		if (color.equals(" ")) {
+			return "Color  not applicable for this item as its empty" ;
+		}
+		
+		 
+		
+		String[] colorDetails = color.split(",");
+		
+ 		String colorNum = colorDetails[1];
+	
+ 		System.out.println("colornum "+ colorNum);
+	
+//  WebDriverWait wait = new WebDriverWait(driver, 20);	
+	
+// WebElement element	 = wait.until(ExpectedConditions
+//			.visibilityOfElementLocated(ByClass.getByObject("css-addColor",colorNum,"']")));
+ 
+ 	
+ 		driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+
+	
+WebElement element	 = driver.findElement(ByClass.getByObject("css-addColor",colorNum,"']"));
+
+
+	
+	String colAvailability = element.getAttribute("class");
+	
+ 
+	
+if(colAvailability.equalsIgnoreCase("swatchAvailable")){
+	
+	
+	   element.click();
+	   
+	   result = " color matched";
+
+ }
+  else {	
+	  
+		System.out.println("given color not available ");
+		result =  ("given color not available ");
+		
+
+	
+}
+	
+ 
+ return result;
+  
+	}
+	
+	
+// *********************************************************************************************	
+	
+	
+public String addQuantity( String qnty )  throws InterruptedException, TimeoutException {
+		
+String result = " ";
+
+WebElement ele;
+
+Boolean present = false;		
+ 
+if (qnty.equals(" ") ){
+	
+	System.out.println("the quantity is not given");
+	
+	return "the quantity is not given";
+} 
+
+ 
+
+try {
+	Thread.sleep(2000);
+	
+} 
+catch (InterruptedException e) {
+	
+ 	e.printStackTrace();
+}
+
+
+	
+if(Integer.parseInt(qnty) > 1) {
+	
+  WebDriverWait wait = new WebDriverWait(driver, 20);	
+ 
+  try {
+ 	  
+ 	      ele = wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("css-addQnty"))); 
+ 	 
+	      System.out.println("entereed try " + ele);	
+ 	      present = true;
+	      
+	}
+  
+  catch (NoSuchElementException e) {
+	  
+	  System.out.println("enteredd catch ");	
+
+	 	present = false;
+
+		
+	  System.out.println("no quantity found on the page ");	
+	
+	  return "no quantity found on the page ";
+		 
+	}
+  catch (TimeoutException e) {
+	  present = false;
+	  
+  }
+  
+  
+  
+  wait = new WebDriverWait(driver, 30);	
+  
+ 
+   
+  
+  
+  if(present) {
+	  
+	   
+      System.out.println("entered if ");
+  		
+  	  WebElement element = driver.findElement(ByClass.getByObject("id-qntySelect"));
+  		
+  		Select select = new Select(element);
+  		  
+  		select.selectByValue(qnty);  // qnty got from the excel file
+  		
+  		result = " quantity selected "+qnty;
+      }
+ 
+      else  if(wait.until(ExpectedConditions.visibilityOfElementLocated
+  				(ByClass.getByObject("xpath-QntyLeft1")))
+  			      .isDisplayed())    {
+    	  
+  		System.out.println("entered else ");
+
+  		result =  ("only 1 item left in stock" );
+  		
+  	 }
+  	
+ 
+	return result;
+	
+	 }	
+
+else {
+	    return "quantity given is 1";
+     } 
+
+}
+	
+	
+	
+//*****************************************************************************************************	
+	
+public String addShipping( String ship ) {
+	
+ 	
+  WebDriverWait wait = new WebDriverWait(driver, 20);	
+  String res = "";
+  if (ship.equals("Y")) {
+  
+   if( wait.until(ExpectedConditions.visibilityOfElementLocated  		  
+		   (ByClass.getByObject("css-addShipping"))).isDisplayed() ) {
+	
+	 driver.findElement(ByClass.getByObject("id-shippingButton")).click();
+		
+ 	}
+   else {
+	   res = ("Free shipping not available on this item");
+   }
+  } else   {
+	  
+	  res =  "Free shipping not chosen by the user" ;
+  }
+	
+   
+  return res;
+
+	
+}
+
+
+//*********************************************************************************************
+
+ 
+public String addAreaCode( String areaCode) {
+
+  	
+	try {
+		Thread.sleep(1000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("xpath-shipBox"))).click();
+
+		driver.findElement(ByClass.getByObject("id-addAreaCode")).sendKeys("94568");
+		
+		wait = new WebDriverWait(driver, 20);
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("xpath-updateAreaCode"))).click();
+
+		String address =  wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("xpath-shipBox")))
+				.getText();
+	 
+		 return address;
+		
+	}
+
+
+//*********************************************************************************************
+
+	public String[] addToCartButton() throws InterruptedException {
+		
+		
+		
+		// *********  add to cart **************	
+		
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+ 
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+
+		String count1 = wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("css-cartCount")))
+				.getText();
+ 
+
+		System.out.println("The initial count is : " + count1);
+
+		wait = new WebDriverWait(driver, 20);
+
+		WebElement element = wait
+				.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("css-addToCart")));
+
+		element.click();
+		
+ 		
+		
+		if(isDisplayed("css-alertPopup")){
+			
+			System.out.println("entered isdisplayed if " );
+         wait = new WebDriverWait(driver,15);
+		
+		  element = wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("css-acceptPopup")));
+		
+        element.click();
+		 
+        
+        try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		}	
+        
+ 
+	wait = new WebDriverWait(driver, 20);
+
+
+
+	String count2 = wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("css-cartCount")))
+			.getText();
+ 
+	//	String count2 = driver.findElement(ByClass.getByObject("css-cartCount")).getText();
+
+	
+	      String title = "";
+		  title = driver.getTitle();
+
+		String[] result = { count1, count2, title };
+
+		// String[] result = {count2,title};
+		
+		System.out.println("results : " + result[0] + "  " + result[1] + "  " + result[2]);
+
+		return result;
+
+	}
+	
+// *******************************************************************************
+	
+	
+	public String[] updatingCartPage() {
+		
+ 		
+		  WebDriverWait wait = new WebDriverWait(driver, 20);	
+ 
+			
+			String itemPrice = driver.findElement(By.xpath(".//div[@id='hlb-subcart']/div/span/span[2]")).getText();
+			
+			System.out.println("item price : " + itemPrice);
+			
+			
+ 
+			String  totalItems = wait.until(ExpectedConditions.visibilityOfElementLocated(ByClass.getByObject("css-cartCount")))
+					.getText();
+		 
+			System.out.println("total items : " + totalItems);
+
+			
+		driver.findElement(By.id("hlb-view-cart-announce")).click();  // cart button click
+		
+		String title = driver.getTitle();
+		
+		String[] res = {itemPrice, totalItems, title};
+		
+		return res;
+		
+	}
+	
+	
+// *****************************************************************************	
+		
+//		public Map<List<WebElement>,List<WebElement>> viewCartPage()  {
+	
+ //	public  List<WebElement>[]  viewCartPage()  {
+	
+	public  String viewCartPage()  {
+/*
+			
+     	List<WebElement> priceList = new ArrayList<WebElement>();
+	 
+		
+    	List<WebElement> itemName = new ArrayList<WebElement>();
+   
+		  priceList  = driver.findElements(By.xpath(".//span[contains(@class,'sc-product-price')]"));
+ 					
+	     itemName = driver.findElements(By.xpath
+	    		(".//span[@class='a-list-item']//following::a/span[@class='a-size-medium sc-product-title a-text-bold']"));
+	    
+ 	      
+	       List[] cartItems = {priceList, itemName};
+	       
+	       
+	 */      
+	    
+	   String itemQnty = driver.findElement(By.cssSelector
+			   ("span[class='a-dropdown-prompt']")).getText();
+ 	   
+	//   return(cartItems);
+	   
+	   return (itemQnty);
+		
+	}
+	
+// ******************************************************************************************
+	
+	 private Boolean isDisplayed(String popupIdLocator) throws InterruptedException {
+	     try {
+	    	 
+	    	 WebDriverWait wait = new WebDriverWait(driver,25);
+	         wait.until(ExpectedConditions
+	        		.visibilityOfElementLocated(ByClass.getByObject(popupIdLocator)));
+	        return true;
+	     }
+	     catch (Exception ex) {
+	       return false;
+	     }
+	 }
+
+}

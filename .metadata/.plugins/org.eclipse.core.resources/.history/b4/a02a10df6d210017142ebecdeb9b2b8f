@@ -1,0 +1,47 @@
+package com.wbl.base;
+
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
+import com.wbl.helper.ByClass;
+import com.wbl.helper.Constants;
+
+public class BaseTest {
+
+	protected WebDriver driver;
+//	static Properties prop;
+
+
+	@BeforeSuite
+	public void beforeSuite() {
+		
+		System.out.println("before suite");
+
+ 	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\resources\\chromedriver.exe");
+		driver = new ChromeDriver();
+		 
+		
+	 
+	/*	
+		  System.setProperty("webdriver.firefox.driver", Constants.PATH + "firefoxdriver.exe");
+		  driver = new FirefoxDriver();
+		  */
+		  
+		 ByClass.loadProperties();
+
+		driver.get("http://www.amazon.com");
+
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+
+	//	driver.close();
+	}
+
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+<suite name="Suite" >
+   
+ <!-- ********************************************** -->
+ 
+  <test name="HomePageNavigationTest"> 
+  <classes> 
+ 
+      <class name ="com.wbl.test.AmazonHomePageTest">
+   
+      </class>
+    </classes>
+  </test>  
+  
+ <!-- ********************************************** -->
+ 
+  <test name="HomePageGetPrime">
+  <classes>
+  <class name="com.wbl.test.AmazonHomePageTest">
+  <methods>
+      <include name="tryPrimeTest"></include>
+      </methods>
+  
+  </class>
+  </classes>
+ </test>
+ 
+  
+ <!-- ********************************************** -->
+
+  <test name="PageFunctionalityTest">
+  
+  <groups>
+  <run>
+  <include name="smoketest"></include>      
+  <include name="functionalitytest"></include>
+  </run>
+  </groups>
+   
+  <classes>
+  
+  <class name="com.wbl.test.HomePageTest">
+  </class>
+  </classes>
+  </test> 
+  
+ <!-- ********************************************** --> 
+<!--  
+<test name="test4">
+  <parameter name="greet" value="Hello Pallavi"></parameter>  these parameters are available to all the tests within the Test3 
+
+<classes>
+
+ <class name="com.wbl.test.BasicStringTest">    </class>
+</classes>
+
+</test>
+
+ -->
+</suite>

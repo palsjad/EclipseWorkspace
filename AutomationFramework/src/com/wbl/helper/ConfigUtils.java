@@ -20,7 +20,7 @@ public class ConfigUtils {
 		
   		prop.load(new FileInputStream(Constants.PATH + fileName));
 
- 		
+ 		 
         return prop;		
 	}
 
