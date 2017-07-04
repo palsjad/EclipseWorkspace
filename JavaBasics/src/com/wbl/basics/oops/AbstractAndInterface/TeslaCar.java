@@ -3,9 +3,9 @@ package com.wbl.basics.oops.AbstractAndInterface;
 public class TeslaCar extends AbstractCar implements  ICarSmartFeatures, IConnectedCar {
 	
 	public TeslaCar() {
-		super("Tesla");
+	//	super("Tesla");
 		
-		System.out.println("\n");
+		System.out.println("in tesla constructor\n");
 		
 	}
 

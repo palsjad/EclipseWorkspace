@@ -110,9 +110,9 @@ public class MapExample {
  public static void main(String[]args){
 	
 	MapExample me = new MapExample();
- 	me.mapBasics();
+ //	me.mapBasics();
 //	me.treeMapBasics();
-//  me.hashMapObject();
+   me.hashMapObject();
 //	me.treeMapObject();
 }
 

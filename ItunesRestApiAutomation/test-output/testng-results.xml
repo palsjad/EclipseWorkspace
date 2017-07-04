@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2003" started-at="2017-05-26T00:22:21Z" finished-at="2017-05-26T00:22:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2003" started-at="2017-05-26T00:22:21Z" finished-at="2017-05-26T00:22:23Z">
+      <class name="com.wbl.itunesRest.test.itunesAPIMethodsTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:com.wbl.itunesRest.test.itunesAPIMethodsTest@18be83e4]" name="before" is-config="true" duration-ms="52" started-at="2017-05-25T17:22:21Z" finished-at="2017-05-25T17:22:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="getURLResponseTest()[pri:0, instance:com.wbl.itunesRest.test.itunesAPIMethodsTest@18be83e4]" name="getURLResponseTest" duration-ms="1749" started-at="2017-05-25T17:22:21Z" finished-at="2017-05-25T17:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURLResponseTest -->
+        <test-method status="PASS" signature="itunesGetJson()[pri:0, instance:com.wbl.itunesRest.test.itunesAPIMethodsTest@18be83e4]" name="itunesGetJson" duration-ms="33" started-at="2017-05-25T17:22:23Z" finished-at="2017-05-25T17:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- itunesGetJson -->
+        <test-method status="PASS" signature="itunesGetTest()[pri:0, instance:com.wbl.itunesRest.test.itunesAPIMethodsTest@18be83e4]" name="itunesGetTest" duration-ms="147" started-at="2017-05-25T17:22:23Z" finished-at="2017-05-25T17:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- itunesGetTest -->
+      </class> <!-- com.wbl.itunesRest.test.itunesAPIMethodsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

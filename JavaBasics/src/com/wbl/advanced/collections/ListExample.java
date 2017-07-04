@@ -171,7 +171,7 @@ System.out.println("The size of the list after appending thenew list is : " + li
 	stList.add(st4);
 	stList.add(st5);
 	
-	Collections.sort(stList, new StudentComparator());
+	 Collections.sort(stList, new StudentComparator());
 	
 	for(Student std : stList) {
 		System.out.println("the student id is : " + std.id + " and the name is : " + std.name);
@@ -179,8 +179,8 @@ System.out.println("The size of the list after appending thenew list is : " + li
 		
 //converting list to array and array to list
 		
-		Student[] stdArr = (Student[]) stList.toArray();
-		List<Student> stdlist = Arrays.asList(stdArr);
+	/*	Student[] stdArr = (Student[]) stList.toArray();
+		List<Student> stdlist = Arrays.asList(stdArr);*/
 		
 	}
 	

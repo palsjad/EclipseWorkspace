@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;grid&apos;" deleteContents="false" description="Delete resource &apos;grid&apos;" element1="/grid" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1494909188513"/>&#x0A;<refactoring comment="Delete resource &apos;seleniumGridAutomation/src/main/java/com/wbl/grid/App.java&apos;" deleteContents="false" description="Delete resource &apos;seleniumGridAutomation/src/main/java/com/wbl/grid/App.java&apos;" element1="/seleniumGridAutomation/src/main/java/com/wbl/grid/App.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1494995675634"/>
+</session>

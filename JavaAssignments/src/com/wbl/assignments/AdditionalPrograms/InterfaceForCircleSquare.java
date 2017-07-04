@@ -1,6 +1,6 @@
 package com.wbl.assignments.AdditionalPrograms;
 
-public interface InterfaceForCircleSquare {
+public  interface InterfaceForCircleSquare {
 	
 	double PI = 3.14;
 	

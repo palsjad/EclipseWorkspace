@@ -3,9 +3,9 @@ package com.wbl.basics.oops.AbstractAndInterface;
 public class PriusCar extends AbstractCar   {
 	
 	public PriusCar() {
-		super("Prius");
+	//	super("Prius");
 		
-		System.out.println("\n");
+		System.out.println("in prius car constructor\n");
 		
 	}
 

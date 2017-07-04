@@ -47,9 +47,13 @@ public class JailBreak {
 		
 		int total = 0;
 		
+		int finalTotal = 0;
+		
 		
 		int temp = 0;
 		int wall = 0;
+		
+		
  
 	for(int i = 0  ; i < wallHeight.length; i++)	{
 		
@@ -80,11 +84,14 @@ public class JailBreak {
 		}
 		
 	System.out.println("The total number of jumps amde by the activist are  : " + total);
+	
+	finalTotal = finalTotal + total;
 
 		}
 		
 		
- 
+	System.out.println("The final total number of jumps amde by the activist are  : " + finalTotal);
+
  		
 		
 	}

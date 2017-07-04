@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;mobileAuto/resources/zom.apk&apos;" deleteContents="false" description="Delete resource &apos;mobileAuto/resources/zom.apk&apos;" element1="/mobileAuto/resources/zom.apk" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1494707413712"/>
+</session>

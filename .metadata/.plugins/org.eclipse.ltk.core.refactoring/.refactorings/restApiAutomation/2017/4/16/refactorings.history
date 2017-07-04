@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;restApiAutomation/src/main/java/com/wbl/restApiAutomation/TwitterTestApi.java&apos; to &apos;TwitterRestApi.java&apos;" description="Rename resource &apos;TwitterTestApi.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/com/wbl/restApiAutomation/TwitterTestApi.java" name="TwitterRestApi.java" stamp="1492716767151" updateReferences="true"/>
+</session>

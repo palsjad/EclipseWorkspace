@@ -48,8 +48,26 @@
 			<item value="[name]"/>
 		</list>
 	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="com.wbl.test"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="com.wbl.test"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\QA\EclipseWorkspace\seleniumGridAutomation\build\StandaloneGrid-testng.xml"/>
+			<item value="C:\QA\EclipseWorkspace\mobileAuto\src\main\java\com\mobileAuto\App.java"/>
+			<item value="C:\QA\EclipseWorkspace\JavaAssignments\src\com\wbl\assignments\AdditionalPrograms\AccessModShapeDemo.java"/>
+			<item value="C:\QA\EclipseWorkspace\ItunesRestApiFramework\pom.xml"/>
+			<item value="C:\QA\EclipseWorkspace\JavaPractice\src\com\wbl\practice\PermutationCopy.java"/>
 			<item value="C:\QA\EclipseWorkspace\AutomationFramework"/>
 			<item value="C:\QA\EclipseWorkspace\WebDriverBasics\src\com\wbl\automation"/>
 		</list>
@@ -64,17 +82,22 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.auto.practice"/>
-			<item value="com.TestingAutomation"/>
-			<item value="com.AutomationFramework"/>
+			<item value="com.wbl.Cucumber"/>
+			<item value="com.wbl.seleniumGrid"/>
+			<item value="com.wbl.JavaPractice2"/>
+			<item value="com.wbl.seleniumGridAutomation"/>
+			<item value="com.wbl.seleniumGrid.grid"/>
 		</list>
 		<list key="groupId">
-			<item value="com"/>
+			<item value="com.wbl"/>
+			<item value="com.wbl.seleniumGrid"/>
 		</list>
 		<list key="artifactId">
-			<item value="automation"/>
-			<item value="TestingAutomation"/>
-			<item value="AutomationFramework"/>
+			<item value="Cucumber"/>
+			<item value="seleniumGrid"/>
+			<item value="JavaPractice2"/>
+			<item value="seleniumGridAutomation"/>
+			<item value="grid"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

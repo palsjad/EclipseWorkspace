@@ -116,11 +116,11 @@ public class StringDemo {
 		 StringBuffer sb = new StringBuffer("today");
 		 
 		 sb.append(" class");
-		 System.out.println("String buffer is immutable so it can change a string : " + sb);
+		 System.out.println("String buffer is mutable so it can change a string : " + sb);
 		 
 		 StringBuilder sb1 = new StringBuilder("Pallavi");
 		 sb1.append(" class");
-		 System.out.println("String builder is immutable so it can change a string : " + sb1);
+		 System.out.println("String builder is mutable so it can change a string : " + sb1);
 		 
 		 
 	 }
@@ -166,9 +166,9 @@ public class StringDemo {
 		
 	 StringDemo sd = new StringDemo();
 	 
-	sd.printString();
+//	sd.printString();
 	
-	sd.stringMethods(); 
+//	sd.stringMethods(); 
 	
     sd.stringBufferAndStringBuilder();
 

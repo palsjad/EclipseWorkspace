@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JavaPractice/src/com/wbl/practice/MinimunPathSum.java&apos; to &apos;MinimumPathSum.java&apos;" description="Rename resource &apos;MinimunPathSum.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/wbl/practice/MinimunPathSum.java" name="MinimumPathSum.java" stamp="1493163312768" updateReferences="true"/>
+</session>

@@ -8,7 +8,7 @@ public class Books {
 	public String bookDescp;
 	public String bookCondition;
 	
-	
+	 
 
     public void booksDetails() {
     	System.out.println(" The title of the book is : " + bookTitle);

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="55948" started-at="2017-06-21T07:46:27Z" finished-at="2017-06-21T07:47:23Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="55948" started-at="2017-06-21T07:46:27Z" finished-at="2017-06-21T07:47:23Z">
+      <class name="com.wbl.MultiThreading.WalmartExample">
+        <test-method status="PASS" signature="chromeBrowser()[pri:0, instance:com.wbl.MultiThreading.WalmartExample@7cd62f43]" name="chromeBrowser" duration-ms="52532" started-at="2017-06-21T00:46:27Z" finished-at="2017-06-21T00:47:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chromeBrowser -->
+        <test-method status="PASS" signature="firefoxBrowser()[pri:0, instance:com.wbl.MultiThreading.WalmartExample@7cd62f43]" name="firefoxBrowser" duration-ms="55922" started-at="2017-06-21T00:46:27Z" finished-at="2017-06-21T00:47:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firefoxBrowser -->
+        <test-method status="PASS" signature="IETest()[pri:0, instance:com.wbl.MultiThreading.WalmartExample@7cd62f43]" name="IETest" duration-ms="17332" started-at="2017-06-21T00:46:27Z" finished-at="2017-06-21T00:46:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IETest -->
+      </class> <!-- com.wbl.MultiThreading.WalmartExample -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

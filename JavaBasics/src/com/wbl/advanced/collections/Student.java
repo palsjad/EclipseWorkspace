@@ -40,7 +40,7 @@ public class Student implements Comparable<Student>{
 						
 		 }
 			
-			
+	 	
 			@Override
 			public int hashCode() {
 				
@@ -56,6 +56,10 @@ public class Student implements Comparable<Student>{
 				
 				return isEqual;
 			}
+			
+			
+			
+			 
 		}
 
 		

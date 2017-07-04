@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;seleniumGridAutomation/resources/chromedriver.exe&apos; to &apos;chromedriverNew.exe&apos;" description="Rename resource &apos;chromedriver.exe&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="resources/chromedriver.exe" name="chromedriverNew.exe" stamp="1498086920092" updateReferences="true"/>
+</session>

@@ -37,7 +37,7 @@ public class AdditionofDigitsInNumber {
 		return j;
 	}
 
-	public static void main(String args[]) {
+	public static  void main(String args[]) {
 
 		AdditionofDigitsInNumber adn = new AdditionofDigitsInNumber();
 

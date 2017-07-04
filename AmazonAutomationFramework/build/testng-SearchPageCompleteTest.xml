@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+ 
+<suite name="Suite" >
+  
+ <!-- ********************************************** --> 
+ 
+ <test name="test1">
+ 
+<!--   <parameter name="searchDatabase3" value="clothing"></parameter>   -->
+
+<classes>
+
+ <class name="com.wbl.test.AmazonSearchTest">   
+  <methods>
+      <include name="searchResultsTest"></include>
+   </methods>
+ 
+ 
+  </class>
+ 
+</classes>
+
+</test>
+
+ 
+
+</suite>

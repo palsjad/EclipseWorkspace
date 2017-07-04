@@ -3,9 +3,9 @@ package com.wbl.basics.oops.AbstractAndInterface;
 public class FordCar extends AbstractCar{
 
 	public FordCar() {
-		super("Ford");
+		 super("Ford");
 		
-		System.out.println("\n");
+		System.out.println("in ford construcotr\n");
 		
 	}
 

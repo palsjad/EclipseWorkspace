@@ -3,9 +3,9 @@ package com.wbl.basics.oops.AbstractAndInterface;
 public class HondaCar extends AbstractCar implements  ICarSmartFeatures {
 	
 	public HondaCar() {
-		super("Honda");
+	 	super("Honda");
 		
-		System.out.println("\n");
+		System.out.println("in honda constructor\n");
 		
 	}
 

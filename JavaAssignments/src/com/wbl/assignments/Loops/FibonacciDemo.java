@@ -34,10 +34,10 @@ public class FibonacciDemo {
         	
 		}
  
-        
+      /*  
         if (count < num) {
    		System.out.print( "  " + a );
-        }
+        }*/
 	}
 
 }

@@ -77,6 +77,8 @@ public class AccessModShape implements InterfaceForCircleSquare, InterfaceForTri
 		return 0;
 	}
  
+
 	
+	 
 
 }
