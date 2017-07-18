@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="io.appium.java_client.android.AndroidDriver"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.remote.DesiredCapabilities"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.Platform"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.remote.RemoteWebDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="io.appium.java_client.TouchAction"/>
 <fullyQualifiedTypeName name="io.appium.java_client.MobileElement"/>
@@ -37,27 +33,31 @@
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="com.amazonaws.auth.BasicAWSCredentials"/>
 <fullyQualifiedTypeName name="com.amazonaws.services.s3.AmazonS3ClientBuilder"/>
 <fullyQualifiedTypeName name="com.amazonaws.auth.AWSStaticCredentialsProvider"/>
 <fullyQualifiedTypeName name="com.amazonaws.regions.Regions"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxOptions"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerDriver"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="org.testng.annotations.BeforeClass"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterClass"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="oauth.signpost.http.HttpResponse"/>
-<fullyQualifiedTypeName name="org.apache.http.impl.client.HttpClientBuilder"/>
-<fullyQualifiedTypeName name="org.apache.http.client.HttpClient"/>
-<fullyQualifiedTypeName name="org.apache.http.client.methods.HttpGet"/>
 <fullyQualifiedTypeName name="oauth.signpost.commonshttp.CommonsHttpOAuthConsumer"/>
 <fullyQualifiedTypeName name="oauth.signpost.OAuthConsumer"/>
+<fullyQualifiedTypeName name="org.apache.http.client.HttpClient"/>
+<fullyQualifiedTypeName name="org.apache.http.client.methods.HttpGet"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeClass"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.IOUtils"/>
+<fullyQualifiedTypeName name="org.apache.http.HttpResponse"/>
+<fullyQualifiedTypeName name="org.json.JSONArray"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.wbl.page.searchItem"/>
+<fullyQualifiedTypeName name="org.apache.http.impl.client.HttpClientBuilder"/>
 </qualifiedTypeNameHistroy>

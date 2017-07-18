@@ -1,0 +1,12 @@
+package com.wbl.WalmartSearchApi;
+
+import org.apache.http.HttpResponse;
+
+public class searchItemTest {
+	
+	
+	HttpResponse response;
+	searchItem wsi = new searchItem();
+	
+
+}

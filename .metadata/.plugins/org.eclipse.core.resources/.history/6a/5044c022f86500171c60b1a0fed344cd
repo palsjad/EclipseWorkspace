@@ -1,0 +1,95 @@
+package com.wbl.WalmartSearchApi;
+
+import java.io.IOException;
+
+import org.apache.commons.io.IOUtils;
+import org.apache.http.HttpResponse;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class searchItemTest {
+	
+	
+	HttpResponse response;
+	searchItem wsi; 
+	
+	
+	@BeforeClass
+	public void before() {
+		
+		wsi =  new searchItem();
+	 	
+	}
+	
+	
+	@Test
+	public void itemTest() throws JSONException, IllegalStateException, IOException {
+		
+		response = wsi.getMethod();
+		
+		 
+			
+			JSONObject obj = new JSONObject(IOUtils.toString(response.getEntity().getContent()));
+			
+		 
+		
+		System.out.println(response.getStatusLine().getStatusCode());
+
+		Assert.assertEquals(response.getStatusLine().getStatusCode(), 200);
+		
+		
+	/*
+ 		
+		query": "ipod",
+	    "sort": "relevance",
+	    "responseGroup": "base",
+	    "totalResults": 21298,
+	    "start": 1,
+	    "numItems": 10,
+		*/
+	   System.out.println( obj.get("totalResults"));
+	   System.out.println( obj.get("sort"));
+	   System.out.println( obj.get("responseGroup"));
+	   System.out.println( obj.get("start"));
+	   System.out.println( obj.get("numItems"));
+	    
+	   
+	   Assert.assertEquals( obj.get("totalResults"),21298);
+	   Assert.assertEquals( obj.get("sort"),"relevance");
+	   Assert.assertEquals( obj.get("responseGroup"),"base");
+	   Assert.assertEquals( obj.get("start"),1);
+	   Assert.assertEquals( obj.get("numItems"),10);
+	    
+		 
+	  
+	   JSONArray arr =  obj.getJSONArray("items");
+	   
+	    obj = arr.getJSONObject(0);
+	   
+	   System.out.println(obj.get("itemId"));
+	   System.out.println( obj.get("name"));
+	   System.out.println(obj.get("salePrice"));
+	   
+	   Assert.assertEquals(obj.get("itemId"),"42608121");
+	   Assert.assertEquals( obj.get("name"),"Apple iPod touch 16GB, Assorted Colors");
+	   Assert.assertEquals(obj.get("salePrice"),"189.99");
+	   
+
+      	 obj = arr.getJSONObject(9);
+	   
+	   System.out.println(obj.get("itemId"));
+	   System.out.println( obj.get("name") );
+	   System.out.println(obj.get("salePrice") );
+
+	   Assert.assertEquals(obj.get("itemId"),"34008412");
+	   Assert.assertEquals( obj.get("name"),"Apple iPod nano 16GB Refurbished, Space Gray");
+	   Assert.assertEquals(obj.get("salePrice"),"123.95");
+
+		
+	}
+
+}

@@ -19,7 +19,7 @@
       <service name="AutoScaling">https://autoscaling.us-gov-west-1.amazonaws.com/</service>
       <service name="CloudWatch">https://monitoring.us-gov-west-1.amazonaws.com/</service>
       <service name="CloudFormation">https://cloudformation.us-gov-west-1.amazonaws.com/</service>
-	  <service name="Lambda">https://lambda.us-gov-west-1.amazonaws.com/</service>
+      <service name="Lambda">https://lambda.us-gov-west-1.amazonaws.com/</service>
       <service name="DynamoDB">https://dynamodb.us-gov-west-1.amazonaws.com/</service>
       <service name="DynamoDBStream">https://streams.dynamodb.us-gov-west-1.amazonaws.com/</service>
       <service name="CodeDeploy">https://codedeploy.us-gov-west-1.amazonaws.com/</service>
@@ -152,6 +152,7 @@
       <service name="Kinesis">https://kinesis.us-west-1.amazonaws.com/</service>
       <service name="Lambda">https://lambda.us-west-1.amazonaws.com/</service>
       <service name="Logs">https://logs.us-west-1.amazonaws.com/</service>
+      <service name="CodeCommit">https://codecommit.us-west-1.amazonaws.com</service>
       <service name="CloudWatchEvents">https://events.us-west-1.amazonaws.com/</service>
       <service name="KMS">https://kms.us-west-1.amazonaws.com</service>
     </services>
@@ -181,6 +182,7 @@
       <service name="Kinesis">https://kinesis.ca-central-1.amazonaws.com/</service>
       <service name="Lambda">https://lambda.ca-central-1.amazonaws.com/</service>
       <service name="Logs">https://logs.ca-central-1.amazonaws.com/</service>
+      <service name="CodeCommit">https://codecommit.ca-central-1.amazonaws.com</service>
       <service name="KMS">https://kms.ca-central-1.amazonaws.com</service>
     </services>
   </region>
@@ -243,6 +245,7 @@
       <service name="Lambda">https://lambda.eu-west-2.amazonaws.com/</service>
       <service name="Kinesis">https://kinesis.eu-west-2.amazonaws.com/</service>
       <service name="Logs">https://logs.eu-west-2.amazonaws.com/</service>
+      <service name="CodeCommit">https://codecommit.eu-west-2.amazonaws.com</service>
       <service name="KMS">https://kms.eu-west-2.amazonaws.com</service>
     </services>
   </region>
@@ -300,6 +303,7 @@
       <service name="Lambda">https://lambda.ap-south-1.amazonaws.com/</service>
       <service name="Kinesis">https://kinesis.ap-south-1.amazonaws.com/</service>
       <service name="Logs">https://logs.ap-south-1.amazonaws.com/</service>
+      <service name="CodeCommit">https://codecommit.ap-south-1.amazonaws.com</service>
       <service name="CloudWatchEvents">https://events.ap-south-1.amazonaws.com/</service>
       <service name="KMS">https://kms.ap-south-1.amazonaws.com</service>
     </services>
@@ -392,6 +396,7 @@
       <service name="DynamoDBStream">https://streams.dynamodb.ap-northeast-2.amazonaws.com/</service>
       <service name="Kinesis">https://kinesis.ap-northeast-2.amazonaws.com/</service>
       <service name="Logs">https://logs.ap-northeast-2.amazonaws.com/</service>
+      <service name="CodeCommit">https://codecommit.ap-northeast-2.amazonaws.com</service>
       <service name="Lambda">https://lambda.ap-northeast-2.amazonaws.com/</service>
       <service name="CloudWatchEvents">https://events.ap-northeast-2.amazonaws.com/</service>
       <service name="KMS">https://kms.ap-northeast-2.amazonaws.com</service>
@@ -453,6 +458,7 @@
       <service name="ElasticBeanstalk">https://elasticbeanstalk.sa-east-1.amazonaws.com/</service>
       <service name="GitPush">https://git.elasticbeanstalk.sa-east-1.amazonaws.com/</service>
       <service name="Logs">https://logs.sa-east-1.amazonaws.com/</service>
+      <service name="CodeCommit">https://codecommit.sa-east-1.amazonaws.com</service>
       <service name="Lambda">https://lambda.sa-east-1.amazonaws.com/</service>
       <service name="CloudWatchEvents">https://events.sa-east-1.amazonaws.com/</service>
       <service name="KMS">https://kms.sa-east-1.amazonaws.com</service>

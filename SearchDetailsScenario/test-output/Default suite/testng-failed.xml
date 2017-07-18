@@ -5,10 +5,10 @@
     <classes>
       <class name="com.wbl.test.SearchDetailsTest">
         <methods>
+          <include name="getSizeTest" invocation-numbers="0"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
           <include name="before"/>
-          <include name="getQuantityTest" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.wbl.test.SearchDetailsTest -->
     </classes>

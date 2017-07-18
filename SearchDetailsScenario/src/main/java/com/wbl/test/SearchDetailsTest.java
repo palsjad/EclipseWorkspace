@@ -30,7 +30,11 @@ public class SearchDetailsTest extends BaseTest {
 		
 		System.out.println("beforeclass");
 		sd = new SearchDetailsPage(driver);
-		
+/*		
+driver.get("https://www.walmart.com/ip/Ekidsbridal-Wedding-Pageant-Glitter-Sequin-Tulle-Flower-Girl-Dress-"
+		+ "Toddler-Junior-Bridesmaid-Recital-Easter-Holiday-Communion-Birthday-Girls-Clothing/585061526?variantFieldId="
+		+ "actual_color");
+		*/
 	//	System.out.println(driver.getTitle());
 
 	}
@@ -80,12 +84,14 @@ public class SearchDetailsTest extends BaseTest {
 	}
 	
 	
-	@Test(dataProvider = "Color")	
+//	@Test(dataProvider = "Color")	
+	
+	
+	@Test(dataProvider = "SearchDetails")
 	public void getColorTest(String url, String color, String size, String qnty, String expected1, String expected2) {
 		
-		System.out.println("pallavi 1 " + url);
-		
- 		driver.get(url);
+ 		
+ 	 	driver.get(url);
 		
 		String res = sd.getColor(color);
 		
@@ -96,11 +102,12 @@ public class SearchDetailsTest extends BaseTest {
 		
 	}
 	
-	@Test(dataProvider = "Size")
-	public void getSizeTest(String url, String color, String size, String qnty , String expected2) throws InterruptedException {
+//	@Test(dataProvider = "Size")
+	
+	@Test(dataProvider = "SearchDetails")
+	public void getSizeTest(String url, String color, String size, String qnty , String expected1,String expected2) throws InterruptedException {
 		
-		System.out.println("pallavi 2");
-		driver.get(url);
+ //		driver.get(url);
 
 		String res = sd.getColor(color);
 		
@@ -120,11 +127,12 @@ public class SearchDetailsTest extends BaseTest {
 		
 	}
 	
-	@Test(dataProvider = "Quantity")
+//	@Test(dataProvider = "Quantity")
+	
+	@Test(dataProvider = "SearchDetails")
 	public void getQuantityTest(String url, String color, String size, String qnty, String expected1, String expected2) throws InterruptedException {
 		
-		System.out.println("pallavi 3");
-		driver.get(url);
+ //		driver.get(url);
 //		driver.manage().window().maximize();
 
       String res = "";

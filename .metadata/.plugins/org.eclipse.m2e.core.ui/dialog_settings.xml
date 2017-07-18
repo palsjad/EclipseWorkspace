@@ -82,6 +82,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.wbl.WalmartSearchApi"/>
 			<item value="com.wbl.Cucumber"/>
 			<item value="com.wbl.seleniumGrid"/>
 			<item value="com.wbl.JavaPractice2"/>
@@ -93,6 +94,7 @@
 			<item value="com.wbl.seleniumGrid"/>
 		</list>
 		<list key="artifactId">
+			<item value="WalmartSearchApi"/>
 			<item value="Cucumber"/>
 			<item value="seleniumGrid"/>
 			<item value="JavaPractice2"/>

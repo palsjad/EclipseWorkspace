@@ -1,0 +1,10 @@
+package com.wbl.WalmartSearchApi;
+
+public class walmartSearchItemTest {
+	
+	
+	HttpResponse response;
+	walmartSearchItem wsi = new walmartSearchItem();
+	
+
+}
