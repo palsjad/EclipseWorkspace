@@ -3,7 +3,7 @@
 	<section name="CleanDialogSettings">
 		<item value="500" key="DIALOG_WIDTH"/>
 		<item value="true" key="TOGGLE_SELECTED"/>
-		<item value="377" key="DIALOG_HEIGHT"/>
+		<item value="402" key="DIALOG_HEIGHT"/>
 		<item value="433" key="DIALOG_X_ORIGIN"/>
 		<item value="133" key="DIALOG_Y_ORIGIN"/>
 	</section>
@@ -12,6 +12,11 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\QA\EclipseWorkspace\Medha_WebDriver"/>
+			<item value="C:\QA\EclipseWorkspace\Medha_JunitAndTestNG"/>
+			<item value="C:\QA\EclipseWorkspace\Medha_api_automation"/>
+			<item value="C:\QA\EclipseWorkspace\Medha_JavaBasics-March"/>
+			<item value="C:\QA\EclipseWorkspace\SearchDetailsScenario"/>
 			<item value="C:\QA\EclipseWorkspace\JavaAssignments"/>
 			<item value="C:\QA\EclipseWorkspace"/>
 			<item value="C:\QA-EclipseWorskspaceCopy\EclipseWorkspace"/>

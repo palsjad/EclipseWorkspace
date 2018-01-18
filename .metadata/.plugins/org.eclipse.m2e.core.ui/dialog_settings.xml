@@ -63,6 +63,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\QA\EclipseWorkspace\Cucumber"/>
 			<item value="C:\QA\EclipseWorkspace\seleniumGridAutomation\build\StandaloneGrid-testng.xml"/>
 			<item value="C:\QA\EclipseWorkspace\mobileAuto\src\main\java\com\mobileAuto\App.java"/>
 			<item value="C:\QA\EclipseWorkspace\JavaAssignments\src\com\wbl\assignments\AdditionalPrograms\AccessModShapeDemo.java"/>
@@ -82,6 +83,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.wbl.BarChart"/>
+			<item value="com.wbl.barchart"/>
+			<item value="com.wbl.InterviewQuestions"/>
+			<item value="com.wbl.RestAssured_TwitterExample"/>
+			<item value="com.wbl.restAssured"/>
+			<item value="com.wbl.RestAssured_LifeLockEcample"/>
+			<item value="com.wbl.RestAssured_WalmartSearchApi"/>
+			<item value="com.wbl.WalmartSearchScenario"/>
+			<item value="com.wbl.SearchDetailsScenario"/>
 			<item value="com.wbl.WalmartSearchApi"/>
 			<item value="com.wbl.Cucumber"/>
 			<item value="com.wbl.seleniumGrid"/>
@@ -94,6 +104,15 @@
 			<item value="com.wbl.seleniumGrid"/>
 		</list>
 		<list key="artifactId">
+			<item value="BarChart"/>
+			<item value="barchart"/>
+			<item value="InterviewQuestions"/>
+			<item value="RestAssured_TwitterExample"/>
+			<item value="restAssured"/>
+			<item value="RestAssured_LifeLockEcample"/>
+			<item value="RestAssured_WalmartSearchApi"/>
+			<item value="WalmartSearchScenario"/>
+			<item value="SearchDetailsScenario"/>
 			<item value="WalmartSearchApi"/>
 			<item value="Cucumber"/>
 			<item value="seleniumGrid"/>

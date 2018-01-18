@@ -155,6 +155,7 @@
       <service name="CodeCommit">https://codecommit.us-west-1.amazonaws.com</service>
       <service name="CloudWatchEvents">https://events.us-west-1.amazonaws.com/</service>
       <service name="KMS">https://kms.us-west-1.amazonaws.com</service>
+      <service name="CodeStar">https://codestar.us-west-1.amazonaws.com</service>
     </services>
   </region>
 
@@ -247,6 +248,7 @@
       <service name="Logs">https://logs.eu-west-2.amazonaws.com/</service>
       <service name="CodeCommit">https://codecommit.eu-west-2.amazonaws.com</service>
       <service name="KMS">https://kms.eu-west-2.amazonaws.com</service>
+      <service name="CodeStar">https://codestar.eu-west-2.amazonaws.com</service>
     </services>
   </region>
 
@@ -275,6 +277,7 @@
       <service name="Kinesis">https://kinesis.eu-central-1.amazonaws.com/</service>
       <service name="CodeCommit">https://codecommit.eu-central-1.amazonaws.com</service>
       <service name="Logs">https://logs.eu-central-1.amazonaws.com/</service>
+      <service name="CodeStar">https://codestar.eu-central-1.amazonaws.com</service>
       <service name="CloudWatchEvents">https://events.eu-central-1.amazonaws.com/</service>
       <service name="KMS">https://kms.eu-central-1.amazonaws.com</service>
     </services>
@@ -335,6 +338,7 @@
       <service name="Logs">https://logs.ap-southeast-1.amazonaws.com/</service>
       <service name="CodeCommit">https://codecommit.ap-southeast-1.amazonaws.com</service>
       <service name="Lambda">https://lambda.ap-southeast-1.amazonaws.com/</service>
+      <service name="CodeStar">https://codestar.ap-southeast-1.amazonaws.com</service>
       <service name="CloudWatchEvents">https://events.ap-southeast-1.amazonaws.com/</service>
       <service name="KMS">https://kms.ap-southeast-1.amazonaws.com</service>
     </services>
@@ -430,6 +434,7 @@
       <service name="Logs">https://logs.ap-southeast-2.amazonaws.com/</service>
       <service name="CodeCommit">https://codecommit.ap-southeast-2.amazonaws.com</service>
       <service name="Lambda">https://lambda.ap-southeast-2.amazonaws.com/</service>
+      <service name="CodeStar">https://codestar.ap-southeast-2.amazonaws.com</service>
       <service name="CloudWatchEvents">https://events.ap-southeast-2.amazonaws.com/</service>
       <service name="KMS">https://kms.ap-southeast-2.amazonaws.com</service>
     </services>

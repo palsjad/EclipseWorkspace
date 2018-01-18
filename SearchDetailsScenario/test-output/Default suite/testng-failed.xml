@@ -8,7 +8,9 @@
           <include name="getSizeTest" invocation-numbers="0"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
+          <include name="getColorTest" invocation-numbers="0"/>
           <include name="before"/>
+          <include name="getQuantityTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.wbl.test.SearchDetailsTest -->
     </classes>
