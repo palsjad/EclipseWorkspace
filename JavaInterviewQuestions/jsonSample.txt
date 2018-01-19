@@ -1,6 +1,0 @@
-{
-    "status": 200,
-    "data": { "uniqueid": "id201",
-              "name": "pallavi"},
-    "message": "hello"
-}
